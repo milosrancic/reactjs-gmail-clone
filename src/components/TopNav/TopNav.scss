@@ -1,4 +1,10 @@
 .TopNav {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-around;
+}
+.TopNav a{
+  display: inline-block;
+
+
+  // justify-content: space-around;
 }
