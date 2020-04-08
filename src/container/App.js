@@ -1,14 +1,17 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './App.css';
+import SideNav from "../components/SideNav/SideNav";
+import TopNav from "../components/TopNav/TopNav";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        Learn React
-      </header>
-    </div>
-  );
+class App extends Component {
+  render() {
+    return (
+      <div className="App">
+        <SideNav />
+        <TopNav />
+      </div>
+    )
+  }
 }
 
 export default App;
