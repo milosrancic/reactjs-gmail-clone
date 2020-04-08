@@ -1,9 +1,10 @@
-.TopNav {
+.TopNav ul {
   display: flex;
   justify-content: space-around;
+  list-style-type: none;
 }
 .TopNav a{
-  display: inline-block;
+  // display: inline-block;
 
 
   // justify-content: space-around;

@@ -9,14 +9,21 @@ import Primary from "./Primary/Primary";
 const TopNav = () => {
   return (
     <div className="TopNav">
-      <Link to="/topnav/primary">Primary</Link>
-      <Link to="/topnav/social">Social</Link>
-      <Link to="/topnav/promotions">Promotions</Link>
+      <ul>
+        <li>
+          <Link to="/topnav/primary">Primary</Link>
+        </li>
+        <li>
+          <Link to="/topnav/social">Social</Link>
+        </li>
+        <li>
+          <Link to="/topnav/promotions">Promotions</Link>
+        </li>
+      </ul>
 
       <Switch>
         <Route path="/topnav/primary">
           <Primary />
-
         </Route>
         <Route path="/topnav/social">
           <Social />
