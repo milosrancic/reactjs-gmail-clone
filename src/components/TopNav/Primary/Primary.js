@@ -3,7 +3,7 @@ import React from "react";
 const Primary = () => {
   return (
     <div>
-      top: Primary
+      this is PRIMARY component
     </div>
   )
 }

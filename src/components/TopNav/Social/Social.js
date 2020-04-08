@@ -3,7 +3,7 @@ import React from "react";
 const Social = () => {
   return (
     <div>
-      top: Social
+      this is SOCIAL component
     </div>
   )
 }

@@ -3,7 +3,7 @@ import React from "react";
 const Promotions = () => {
   return (
     <div>
-      top: Promotions
+      this is PROMOTIONS component
     </div>
   )
 }
