@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.scss';
-import SideNav from "../components/SideNav/SideNav";
-import TopNav from "../components/TopNav/TopNav";
+
+import Layout from "../components/Layout";
 
 import { Switch, Route, Link } from "react-router-dom";
 
@@ -9,8 +9,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <SideNav />
-        <TopNav />
+        <Layout />
         {/* <Link to="/sidenav">side</Link>
         <Link to="/topnav">top</Link>
 
