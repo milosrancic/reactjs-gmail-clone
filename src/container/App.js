@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './App.css';
+import './App.scss';
 import SideNav from "../components/SideNav/SideNav";
 import TopNav from "../components/TopNav/TopNav";
 
