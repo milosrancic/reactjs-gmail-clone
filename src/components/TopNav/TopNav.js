@@ -11,24 +11,24 @@ const TopNav = () => {
     <div className="TopNav">
       <ul>
         <li>
-          <Link to="/topnav/primary">Primary</Link>
+          <Link to="/primary">Primary</Link>
         </li>
         <li>
-          <Link to="/topnav/social">Social</Link>
+          <Link to="/social">Social</Link>
         </li>
         <li>
-          <Link to="/topnav/promotions">Promotions</Link>
+          <Link to="/promotions">Promotions</Link>
         </li>
       </ul>
 
       <Switch>
-        <Route path="/topnav/primary">
+        <Route path="/primary">
           <Primary />
         </Route>
-        <Route path="/topnav/social">
+        <Route path="/social">
           <Social />
         </Route>
-        <Route path="/topnav/promotions">
+        <Route path="/promotions">
           <Promotions />
         </Route>
       </Switch>

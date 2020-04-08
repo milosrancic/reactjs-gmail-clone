@@ -1,7 +1,12 @@
+.TopNav {
+  width: 70%;
+}
 .TopNav ul {
   display: flex;
   justify-content: space-around;
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 .TopNav a{
   // display: inline-block;

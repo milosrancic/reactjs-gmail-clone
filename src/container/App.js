@@ -9,9 +9,9 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        {/* <SideNav /> */}
-        {/* <TopNav /> */}
-        <Link to="/sidenav">side</Link>
+        <SideNav />
+        <TopNav />
+        {/* <Link to="/sidenav">side</Link>
         <Link to="/topnav">top</Link>
 
         <Switch>
@@ -21,7 +21,7 @@ class App extends Component {
           <Route path="/topnav">
             <TopNav />
           </Route>
-        </Switch>
+        </Switch> */}
       </div>
     )
   }
