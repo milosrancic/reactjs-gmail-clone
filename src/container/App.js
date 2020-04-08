@@ -7,7 +7,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <SideNav />
+        {/* <SideNav /> */}
         <TopNav />
       </div>
     )
