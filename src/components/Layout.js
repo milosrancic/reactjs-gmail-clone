@@ -1,8 +1,10 @@
 import React from "react";
 import "./Layout.scss";
-import Content from "./Content";
 
 import { Switch, Route, Link } from "react-router-dom";
+
+// content
+import Content from "./Content";
 
 // top nav
 import Social from "./Top/Social/Social";
@@ -20,41 +22,43 @@ import Spam from "./Side/Spam/Spam";
 const Layout = () => {
   return (
     <div className="Layout">
-      <div className="top-nav primary">
+      <div className="nav top-nav primary">
         <Link to="/primary">Primary</Link>
       </div>
-      <div className="top-nav social">
+      <div className="nav top-nav social">
         <Link to="/social">Social</Link>
       </div>
-      <div className="top-nav promotions">
+      <div className="nav top-nav promotions">
         <Link to="/promotions">Promotions</Link>
       </div>
 
-      <div className="side-nav compose">
+      <div className="nav side-nav compose">
         <Link to="/sidenav/compose">Compose</Link>
       </div>
-      <div className="side-nav inbox">
+      <div className="nav side-nav inbox">
         <Link to="/inbox">Inbox</Link>
       </div>
-      <div className="side-nav starred">
+      <div className="nav side-nav starred">
         <Link to="/starred">Starred</Link>
       </div>
-      <div className="side-nav sent">
+      <div className="nav side-nav sent">
         <Link to="/sent">Sent</Link>
       </div>
-      <div className="side-nav allmail">
+      <div className="nav side-nav allmail">
         <Link to="/allmail">All Mail</Link>
       </div>
-      <div className="side-nav spam">
+      <div className="nav side-nav spam">
         <Link to="/spam">Spam</Link>
       </div>
-      <div className="side-nav trash">
+      <div className="nav side-nav trash">
         <Link to="/trash">Trash</Link>
       </div>
 
-      <div className="content1">
-        <Content prop="some prop" />
-      </div>
+      {/* <div className="content1"> */}
+      {/* <Content> */}
+
+      {/* </Content> */}
+      {/* </div> */}
 
 
       <Switch>
