@@ -1,8 +1,9 @@
 import React from "react";
+import Spam from "./Side/Spam/Spam";
 
-const Content = () => {
+const Content = (props) => {
   return (
-    <div>this is content</div>
+    <div>{props.prop}</div>
   )
 }
 export default Content;
