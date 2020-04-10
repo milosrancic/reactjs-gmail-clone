@@ -23,21 +23,34 @@
 
   .Layout * {
     border: 1px solid red;
-    position: relative;
+    position: relative; 
   }
 
   .Layout *::after {
-  position: absolute;
-  top: 0;
-  left: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: orange !important; 
+    // letter-spacing: 2px;
   }
+
+  // this below 
+  .Layout::after {
+    background: blue;
+  }
+   .nav *::after {
+    background: blue;
+  }
+  // this above
+
+
   .Layout {
     height: 100%;
     margin: 0;
     padding:0;
     // remove top three 
 
-    
+
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
