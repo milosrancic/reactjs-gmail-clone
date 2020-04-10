@@ -1,5 +1,6 @@
 import React from "react";
 import "./Layout.scss";
+import Content from "./Content";
 
 import { Switch, Route, Link } from "react-router-dom";
 
@@ -19,43 +20,40 @@ import Spam from "./Side/Spam/Spam";
 const Layout = () => {
   return (
     <div className="Layout">
-      <ul>
-        <div className="top-nav div2">
-          <Link to="/primary">Primary</Link>
-        </div>
-        <div className="top-nav div3">
-          <Link to="/social">Social</Link>
-        </div>
-        <div className="top-nav div4">
-          <Link to="/promotions">Promotions</Link>
-        </div>
+      <div className="top-nav primary">
+        <Link to="/primary">Primary</Link>
+      </div>
+      <div className="top-nav social">
+        <Link to="/social">Social</Link>
+      </div>
+      <div className="top-nav promotions">
+        <Link to="/promotions">Promotions</Link>
+      </div>
 
+      <div className="side-nav compose">
+        <Link to="/sidenav/compose">Compose</Link>
+      </div>
+      <div className="side-nav inbox">
+        <Link to="/inbox">Inbox</Link>
+      </div>
+      <div className="side-nav starred">
+        <Link to="/starred">Starred</Link>
+      </div>
+      <div className="side-nav sent">
+        <Link to="/sent">Sent</Link>
+      </div>
+      <div className="side-nav allmail">
+        <Link to="/allmail">All Mail</Link>
+      </div>
+      <div className="side-nav spam">
+        <Link to="/spam">Spam</Link>
+      </div>
+      <div className="side-nav trash">
+        <Link to="/trash">Trash</Link>
+      </div>
 
-        <div className="side-nav div1">
-          <Link to="/sidenav/compose">Compose</Link>
-        </div>
-        <div className="side-nav div5">
-          <Link to="/inbox">Inbox</Link>
-        </div>
-        <div className="side-nav div5">
-          <Link to="/starred">Starred</Link>
-        </div>
-        <div className="side-nav div6">
-          <Link to="/sent">Sent</Link>
-        </div>
-        <div className="side-nav div6">
-          <Link to="/allmail">All Mail</Link>
-        </div>
-        <div className="side-nav div7">
-          <Link to="/spam">Spam</Link>
-        </div>
-        <div className="side-nav div8">
-          <Link to="/trash">Trash</Link>
-        </div>
-      </ul>
-
-      <div className="div11">
-        conten
+      <div className="content1">
+        <Content prop="some prop" />
       </div>
 
 
