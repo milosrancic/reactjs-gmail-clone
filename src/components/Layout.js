@@ -20,38 +20,38 @@ const Layout = () => {
   return (
     <div className="Layout">
       <ul>
-        <li className="top-nav div2">
+        <div className="top-nav div2">
           <Link to="/primary">Primary</Link>
-        </li>
-        <li className="top-nav div3">
+        </div>
+        <div className="top-nav div3">
           <Link to="/social">Social</Link>
-        </li>
-        <li className="top-nav div4">
+        </div>
+        <div className="top-nav div4">
           <Link to="/promotions">Promotions</Link>
-        </li>
+        </div>
 
 
-        <li className="side-nav div1">
+        <div className="side-nav div1">
           <Link to="/sidenav/compose">Compose</Link>
-        </li>
-        <li className="side-nav div5">
+        </div>
+        <div className="side-nav div5">
           <Link to="/inbox">Inbox</Link>
-        </li>
-        <li className="side-nav div5">
+        </div>
+        <div className="side-nav div5">
           <Link to="/starred">Starred</Link>
-        </li>
-        <li className="side-nav div6">
+        </div>
+        <div className="side-nav div6">
           <Link to="/sent">Sent</Link>
-        </li>
-        <li className="side-nav div6">
+        </div>
+        <div className="side-nav div6">
           <Link to="/allmail">All Mail</Link>
-        </li>
-        <li className="side-nav div7">
+        </div>
+        <div className="side-nav div7">
           <Link to="/spam">Spam</Link>
-        </li>
-        <li className="side-nav div8">
+        </div>
+        <div className="side-nav div8">
           <Link to="/trash">Trash</Link>
-        </li>
+        </div>
       </ul>
 
       <div className="div11">
