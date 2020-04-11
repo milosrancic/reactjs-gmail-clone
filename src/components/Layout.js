@@ -19,9 +19,18 @@ import Starred from "./Side/Starred/Starred";
 import Trash from "./Side/Trash/Trash";
 import Spam from "./Side/Spam/Spam";
 
-const Layout = () => {
+const Layout = (props) => {
+  console.log(props)
   return (
-    <div className="Layout">
+    <div>
+      <Inbox />
+      <Content />
+    </div>
+  )
+};
+
+export default Layout;
+{/* <div className="Layout">
       <div className="nav top-nav primary" id="1">
         <Link to="/primary">Primary</Link>
       </div>
@@ -55,7 +64,7 @@ const Layout = () => {
       </div>
 
       <div className="content1">
-        <Content prop="this is passed prop">
+        <Content className="content1" prop={props.prop}>
         </Content>
       </div>
 
@@ -71,9 +80,4 @@ const Layout = () => {
         <Route path="/social" component={Social} />
         <Route path="/promotions" component={Promotions} />
       </Switch>
-    </div>
-
-  )
-};
-
-export default Layout;
+    </div> */}
