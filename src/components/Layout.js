@@ -20,7 +20,8 @@ import Trash from "./Side/Trash/Trash";
 import Spam from "./Side/Spam/Spam";
 
 const Layout = (props) => {
-  console.log(props)
+  let state = { ...props.state };
+  console.log("state from APP:", state)
   return (
 
     <div className="Layout">
