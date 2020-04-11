@@ -3,7 +3,7 @@ import Spam from "./Side/Spam/Spam";
 
 const Content = (props) => {
   return (
-    <div>{props.children}</div>
+    <div>{props.prop}</div>
   )
 }
 export default Content;
