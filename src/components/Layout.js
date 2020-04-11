@@ -7,7 +7,7 @@ import { Switch, Route, Link } from "react-router-dom";
 import Content from "./Content";
 
 // top nav
-import Social from "./Top/Social/Social";
+import Social from "./Top/Social/Social"
 import Promotions from "./Top/Promotions/Promotions";
 import Primary from "./Top/Primary/Primary";
 // 
