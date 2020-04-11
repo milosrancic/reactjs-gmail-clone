@@ -22,13 +22,13 @@ import Spam from "./Side/Spam/Spam";
 const Layout = () => {
   return (
     <div className="Layout">
-      <div className="nav top-nav primary">
+      <div className="nav top-nav primary" id="1">
         <Link to="/primary">Primary</Link>
       </div>
-      <div className="nav top-nav social">
+      <div className="nav top-nav social" id="2">
         <Link to="/social">Social</Link>
       </div>
-      <div className="nav top-nav promotions">
+      <div className="nav top-nav promotions" id="3">
         <Link to="/promotions">Promotions</Link>
       </div>
 
@@ -54,11 +54,10 @@ const Layout = () => {
         <Link to="/trash">Trash</Link>
       </div>
 
-      {/* <div className="content1"> */}
-      {/* <Content> */}
-
-      {/* </Content> */}
-      {/* </div> */}
+      <div className="content1">
+        <Content prop="this is passed prop">
+        </Content>
+      </div>
 
 
       <Switch>
