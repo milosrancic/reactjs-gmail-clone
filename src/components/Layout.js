@@ -22,15 +22,8 @@ import Spam from "./Side/Spam/Spam";
 const Layout = (props) => {
   console.log(props)
   return (
-    <div>
-      <Inbox />
-      <Content />
-    </div>
-  )
-};
 
-export default Layout;
-{/* <div className="Layout">
+    <div className="Layout">
       <div className="nav top-nav primary" id="1">
         <Link to="/primary">Primary</Link>
       </div>
@@ -80,4 +73,8 @@ export default Layout;
         <Route path="/social" component={Social} />
         <Route path="/promotions" component={Promotions} />
       </Switch>
-    </div> */}
+    </div>
+  )
+};
+
+export default Layout;
