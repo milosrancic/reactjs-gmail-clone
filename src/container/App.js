@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.scss';
 
 import Layout from "../components/Layout";
+import Content from "../components/Content";
 
 class App extends Component {
   // constructor(props) {
@@ -21,7 +22,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Layout prop="passed prop from APP" />
+        <Layout prop="passed prop from APP" state={this.state} />
       </div>
     )
   }
