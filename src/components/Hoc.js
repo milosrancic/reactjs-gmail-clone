@@ -12,7 +12,14 @@ const styleUl = {
   padding: "0"
 }
 
-const Hoc = (props) => <div style={styleDiv}><ul style={styleUl}>{props.children}</ul></div>;
+const Hoc = (props) => {
+  // console.log("HOC props:", props)
+  return (
+    <div style={styleDiv}>
+      <ul style={styleUl}>{props.children}</ul>
+    </div>
+  )
+};
 
 
 export default Hoc;
