@@ -1,12 +1,18 @@
 import React from "react";
 
-const style = {
-  margin: "30px auto",
+const styleDiv = {
+  margin: "50px",
   backgroundColor: "orange",
   textAlign: "center"
 }
 
-const Hoc = (props) => <div style={style}>{props.children}</div>;
+const styleUl = {
+  listStyleType: "none",
+  margin: "0",
+  padding: "0"
+}
+
+const Hoc = (props) => <div style={styleDiv}><ul style={styleUl}>{props.children}</ul></div>;
 
 
 export default Hoc;
