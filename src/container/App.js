@@ -35,7 +35,7 @@ class App extends Component {
     return (
       <div className="App">
         {/* <Layout prop="passed prop from APP" state={this.state} /> */}
-        <Layout prop="passed from API" />
+        <Layout state={this.state.inbox} />
       </div>
     )
   }
