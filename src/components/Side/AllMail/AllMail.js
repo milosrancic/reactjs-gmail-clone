@@ -1,10 +1,12 @@
-import React from 'react'
+import React from 'react';
+import Hoc from "../../Hoc";
+
 
 const AllMail = () => {
   return (
-    <div>
+    <Hoc>
       ALL MAIL
-    </div>
+    </Hoc>
   )
 }
 

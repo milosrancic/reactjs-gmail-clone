@@ -1,10 +1,12 @@
-import React from 'react'
+import React from 'react';
+import Hoc from "../../Hoc";
+
 
 const Trash = () => {
   return (
-    <div>
+    <Hoc>
       TRASH
-    </div>
+    </Hoc>
   )
 }
 export default Trash;

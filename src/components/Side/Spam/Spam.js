@@ -1,10 +1,11 @@
-import React from 'react'
+import React from 'react';
+import Hoc from "../../Hoc";
 
 const Spam = () => {
   return (
-    <div>
+    <Hoc>
       SPAM
-    </div>
+    </Hoc>
   )
 }
 export default Spam;

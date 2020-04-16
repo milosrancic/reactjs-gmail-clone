@@ -1,10 +1,11 @@
 import React from 'react'
+import Hoc from "../../Hoc";
 
 const Sent = () => {
   return (
-    <div>
+    <Hoc>
       SENT
-    </div>
+    </Hoc>
   )
 }
 

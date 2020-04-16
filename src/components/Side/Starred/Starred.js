@@ -1,10 +1,11 @@
-import React from 'react'
+import React from 'react';
+import Hoc from "../../Hoc";
 
 const Starred = () => {
   return (
-    <div>
+    <Hoc>
       STARRED
-    </div>
+    </Hoc>
   )
 }
 export default Starred;

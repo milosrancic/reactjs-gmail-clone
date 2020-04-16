@@ -1,10 +1,12 @@
-import React from 'react'
+import React from 'react';
+import Layout from '../../Layout';
+import Hoc from "../../Hoc";
 
-const Inbox = () => {
+const Inbox = (props) => {
   return (
-    <div>
-      Inbox
-    </div>
+    <Hoc>
+      <p>Inbox this is inbox</p>
+    </Hoc>
   )
 }
 
