@@ -4,7 +4,7 @@ import "./Layout.scss";
 import { Switch, Route, Link } from "react-router-dom";
 
 // hoc
-import Hoc from "./Hoc";
+// import Hoc from "./Hoc";
 
 // nav
 import AllMail from "./Side/AllMail/AllMail";
