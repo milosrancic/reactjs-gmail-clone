@@ -1,64 +1,68 @@
-  .Layout * {
-    border: 1px solid red;
-    position: relative; 
-  }
+.Layout {
+  display: flex;
+  justify-content: space-evenly;
+}
+// .Layout * {
+  //   border: 1px solid red;
+  //   position: relative; 
+  // }
 
-  .Layout *::after {
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
+  // .Layout *::after {
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+  // }
 
-  // this below 
-  .Layout::after {
-    background: blue;
-  }
-   .nav *::after {
-    background: blue;
-  }
-  // this above
-
-
-  .Layout {
-    height: 100%;
-    margin: 0;
-    padding:0;
-    // remove top three 
+  // // this below 
+  // .Layout::after {
+  //   background: blue;
+  // }
+  //  .nav *::after {
+  //   background: blue;
+  // }
+  // // this above
 
 
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    // gap: 1px 1px;
-    gap: 1em;
-    grid-template-areas: "compose primary social promotions"
-                         "inbox content1 content1 content1" 
-                          "starred content1 content1 content1" 
-                          "spam content1 content1 content1" 
-                          "trash content1 content1 content1" 
-                          "allmail content1 content1 content1" 
-                          "sent content1 content1 content1";
-  }
+  // .Layout {
+  //   height: 100%;
+  //   margin: 0;
+  //   padding:0;
+  //   // remove top three 
+
+
+  //   display: grid;
+  //   grid-template-columns: 1fr 1fr 1fr 1fr;
+  //   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  //   // gap: 1px 1px;
+  //   gap: 1em;
+  //   grid-template-areas: "compose primary social promotions"
+  //                        "inbox content1 content1 content1" 
+  //                         "starred content1 content1 content1" 
+  //                         "spam content1 content1 content1" 
+  //                         "trash content1 content1 content1" 
+  //                         "allmail content1 content1 content1" 
+  //                         "sent content1 content1 content1";
+  // }
   
-  .compose { grid-area: compose; }
+  // .compose { grid-area: compose; }
   
-  .primary { grid-area: primary; }
+  // .primary { grid-area: primary; }
   
-  .social { grid-area: social; }
+  // .social { grid-area: social; }
   
-  .promotions { grid-area: promotions; }
+  // .promotions { grid-area: promotions; }
   
-  .inbox { grid-area: inbox; }
+  // .inbox { grid-area: inbox; }
   
-  .starred { grid-area: starred; }
+  // .starred { grid-area: starred; }
   
-  .spam { grid-area: spam; }
+  // .spam { grid-area: spam; }
   
-  .trash { grid-area: trash; }
+  // .trash { grid-area: trash; }
   
-  .allmail { grid-area: allmail; }
+  // .allmail { grid-area: allmail; }
   
-  .sent { grid-area: sent; }
+  // .sent { grid-area: sent; }
   
-  .content1 { grid-area: content1; }
+  // .content1 { grid-area: content1; }
   
