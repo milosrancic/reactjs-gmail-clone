@@ -8,15 +8,28 @@ class App extends Component {
     super(props);
 
     this.state = {
-      inbox: {
-        id: 1,
-        email: "Lorem ipsum dolor sit amet."
-      }
-      inbox: "inbox message",
-      spam: "SPAM message",
-      allMail: "allmail yes"
+      inbox: [
+        {
+          id: 1,
+          email: "Lorem ipsum dolor sit amet."
+        },
+        {
+          id: 2,
+          email: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit ea enim dolores a ex deleniti?"
+        }
+      ],
+      spam: [
+        {
+          id: 1,
+          email: "Lorem ipsum, dolor sit amet consectetur adipisicing."
+        },
+        {
+          id: 2,
+          email: "Lorem ipsum dolor sit amet consectetur."
+        }
+      ]
     }
-  }
+  };
 
   render() {
     return (
