@@ -28,8 +28,9 @@ const Layout = (props) => {
         <Link to="/trash">Trash</Link>
       </div>
 
+      {/* component={Inbox}  */}
       <Switch>
-        <Route path="/inbox" component={Inbox} />
+        <Route path="/inbox" render={(props) => (<Inbox test="test123" {...props} />)} />
         <Route path="/starred" component={Starred} />
         <Route path="/sent" component={Sent} />
         <Route path="/allmail" component={AllMail} />
