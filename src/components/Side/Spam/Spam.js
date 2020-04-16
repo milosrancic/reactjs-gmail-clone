@@ -4,7 +4,12 @@ import Hoc from "../../Hoc";
 const Spam = () => {
   return (
     <Hoc>
-      SPAM
+      <p>SPAM</p>
+      <li>email one</li>
+      <li>email two</li>
+      <li>email three</li>
+      <li>email four</li>
+      <li>email five</li>
     </Hoc>
   )
 }
