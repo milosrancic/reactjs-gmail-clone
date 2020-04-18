@@ -39,10 +39,14 @@ class App extends Component {
     }
   };
 
+  onClick = () => {
+    console.log("clicked")
+  }
+
   render() {
     return (
       <div className="App">
-        <Layout state={this.state} />
+        <Layout state={this.state} click={this.onClick} />
       </div>
     )
   }
