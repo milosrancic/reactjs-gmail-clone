@@ -22,7 +22,7 @@ class App extends Component {
           email: "lorem ipsum dolor something"
         }
       ],
-      spam: [
+      starred: [
         {
           id: 1,
           email: "Lorem ipsum, dolor sit amet consectetur adipisicing."
@@ -30,6 +30,10 @@ class App extends Component {
         {
           id: 2,
           email: "Lorem ipsum dolor sit amet consectetur."
+        },
+        {
+          id: 3,
+          email: "Some awesome email 999"
         }
       ]
     }
