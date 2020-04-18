@@ -15,7 +15,11 @@ class App extends Component {
         },
         {
           id: 2,
-          email: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit ea enim dolores a ex deleniti?"
+          email: "Lorem ipsum dolor sit amet, consectetur"
+        },
+        {
+          id: 3,
+          email: "lorem ipsum dolor something"
         }
       ],
       spam: [
@@ -34,7 +38,6 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        {/* <Layout prop="passed prop from APP" state={this.state} /> */}
         <Layout state={this.state.inbox} />
       </div>
     )
