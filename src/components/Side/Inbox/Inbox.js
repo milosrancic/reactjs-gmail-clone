@@ -7,11 +7,9 @@ const Inbox = (props) => {
       <p>INBOX</p>
       {/* {props.inbox} */}
       {console.log("this is props in inbox", props.state)}
-      <li>email one</li>
-      <li>email two</li>
-      <li>email three</li>
-      <li>email four</li>
-      <li>email five</li>
+      {props.state.map((item) => 
+      <li key={item.id}>{item.email}</li>
+        )}
     </Hoc>
   )
 }
