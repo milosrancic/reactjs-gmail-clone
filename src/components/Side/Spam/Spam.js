@@ -1,15 +1,15 @@
 import React from 'react';
 import Hoc from "../../Hoc";
 
-const Spam = () => {
+const Spam = (props) => {
   return (
     <Hoc>
       <p>SPAM</p>
-      <li>email one</li>
-      <li>email two</li>
-      <li>email three</li>
-      <li>email four</li>
-      <li>email five</li>
+      <li>hardcoded emails</li>
+      <li>hardcoded emails</li>
+      <li>hardcoded emails</li>
+      <li>hardcoded emails</li>
+      <li>hardcoded emails</li>
     </Hoc>
   )
 }
