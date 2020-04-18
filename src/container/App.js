@@ -38,7 +38,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Layout state={this.state.inbox} />
+        <Layout state={this.state} />
       </div>
     )
   }
