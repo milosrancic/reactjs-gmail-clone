@@ -1,6 +1,10 @@
 import React from 'react';
 import Hoc from "../../Hoc";
 
+const styleLi = {
+  borderBottom: "1px solid gray"
+}
+
 const Inbox = (props) => {
   return (
     <Hoc>
@@ -8,7 +12,7 @@ const Inbox = (props) => {
       {/* {props.inbox} */}
       {console.log("this is props in inbox", props.state)}
       {props.state.map((item) => 
-      <li key={item.id}>{item.email}</li>
+      <li style={styleLi} key={item.id}>{item.email}</li>
         )}
     </Hoc>
   )
