@@ -32,7 +32,8 @@ const Layout = (props) => {
       <Switch>
         <Route path="/inbox" 
           render={() => (<Inbox state={props.state.inbox} {...props.state.inbox} />)} />
-        <Route path="/starred" component={Starred} />
+        <Route path="/starred" 
+        render={() => (<Starred state={props.state.starred} {...props.state.starred} /> )} />
         <Route path="/sent" component={Sent} />
         <Route path="/allmail" component={AllMail} />
         <Route path="/spam" component={Spam} />
