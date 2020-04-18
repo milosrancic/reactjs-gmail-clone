@@ -12,11 +12,17 @@ const styleUl = {
   padding: "0"
 }
 
+// ITERATION IN UL
+// {props.children[2].map(item =>
+//   console.log("HOC:", item.props.children))
+// }
+// console.log("HOC props:", props.children[2])
 const Hoc = (props) => {
-  // console.log("HOC props:", props)
   return (
     <div style={styleDiv}>
-      <ul style={styleUl}>{props.children}</ul>
+      <ul style={styleUl}>
+        {props.children}
+      </ul>
     </div>
   )
 };
