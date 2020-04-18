@@ -6,7 +6,7 @@ const Starred = (props) => {
     <Hoc>
       <p>STARRED</p>
       {props.state.map((item) => 
-        <li key={item.id}>{item.email}</li>
+        <li key={item.id} onClick={props.click}>{item.email}</li>
       )}
     </Hoc>
   )

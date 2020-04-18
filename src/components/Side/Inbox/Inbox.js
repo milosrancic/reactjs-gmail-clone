@@ -5,9 +5,8 @@ const Inbox = (props) => {
   return (
     <Hoc>
       <p>INBOX</p>
-      {console.log("this is props in inbox", props.state)}
       {props.state.map((item) => 
-      <li key={item.id}>{item.email}</li>
+      <li key={item.id} onClick={props.click}>{item.email}</li>
         )}
     </Hoc>
   )
