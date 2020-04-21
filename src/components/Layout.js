@@ -1,7 +1,7 @@
 import React from "react";
 import "./Layout.scss";
 
-import { Switch, Route, Link } from "react-router-dom";
+import { Switch, Route, NavLink } from "react-router-dom";
 
 // hoc
 // import Hoc from "./Hoc";
@@ -20,12 +20,12 @@ const Layout = (props) => {
   return (
     <>
       <div className="Layout">
-        <Link to="/inbox">Inbox</Link>
-        <Link to="/starred">Starred</Link>
-        <Link to="/sent">Sent</Link>
-        <Link to="/allmail">All Mail</Link>
-        <Link to="/spam">Spam</Link>
-        <Link to="/trash">Trash</Link>
+        <NavLink to="/inbox">Inbox</NavLink>
+        <NavLink to="/starred">Starred</NavLink>
+        <NavLink to="/sent">Sent</NavLink>
+        <NavLink to="/allmail">All Mail</NavLink>
+        <NavLink to="/spam">Spam</NavLink>
+        <NavLink to="/trash">Trash</NavLink>
       </div>
 
       {/* component={Inbox}  */}
