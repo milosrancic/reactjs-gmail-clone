@@ -2,9 +2,10 @@ import React from "react";
 
 // placholder styling
 const styleDiv = {
-  margin: "50px",
+  margin: "50px auto",
   backgroundColor: "orange",
-  textAlign: "center"
+  textAlign: "center",
+  width: "60rem"
 }
 
 // ITERATION IN UL
