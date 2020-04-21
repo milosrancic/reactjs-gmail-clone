@@ -32,11 +32,11 @@ const Layout = (props) => {
       <Switch>
         <Route path="/inbox" 
           render={() => (<Inbox 
-          state={props.state.inbox} {...props.state.inbox} 
+            state={props.state.inbox} 
           click={props.click} />)} />
         <Route path="/starred" 
           render={() => (<Starred 
-          state={props.state.starred} {...props.state.starred} 
+          state={props.state.starred} 
           click={props.click} /> )} />
         <Route path="/sent" component={Sent} />
         <Route path="/allmail" component={AllMail} />
