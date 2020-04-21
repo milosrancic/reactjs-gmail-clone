@@ -39,8 +39,8 @@ class App extends Component {
     }
   };
 
-  onClick = () => {
-    console.log("clicked")
+  onClick = (id) => {
+    console.log("clicked", id)
   }
 
   render() {
