@@ -22,8 +22,9 @@ const title = {
 
 const Inbox = (props) => {
   return (
-    <Hoc>
-  {/* {console.log("inbox:", props)} */}
+    <>
+    {/* <Hoc> */}
+  {console.log("inbox:", props)}
       <p style={title}>INBOX</p>
       {props.state.map((item) => 
       <li key={item.id} style={styleLi} >
@@ -33,7 +34,8 @@ const Inbox = (props) => {
         
       </li>
         )}
-    </Hoc>
+    {/* </Hoc> */}
+  </>
   )
 }
 // onClick={() => props.click(item.id)}
