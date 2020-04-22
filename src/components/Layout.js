@@ -22,10 +22,10 @@ const Layout = (props) => {
       <div className="Layout">
         <NavLink to="/inbox">Inbox</NavLink>
         <NavLink to="/starred">Starred</NavLink>
-        <NavLink to="/sent">Sent</NavLink>
-        <NavLink to="/allmail">All Mail</NavLink>
-        <NavLink to="/spam">Spam</NavLink>
-        <NavLink to="/trash">Trash</NavLink>
+        {/* <NavLink to="/sent">Sent</NavLink> */}
+        {/* <NavLink to="/allmail">All Mail</NavLink> */}
+        {/* <NavLink to="/spam">Spam</NavLink> */}
+        {/* <NavLink to="/trash">Trash</NavLink> */}
       </div>
 
       {/* component={Inbox}  */}
@@ -39,10 +39,10 @@ const Layout = (props) => {
           render={() => (<Starred 
           state={props.state.starred} 
           addToInbox={props.addToInbox} /> )} />
-        <Route path="/sent" component={Sent} />
-        <Route path="/allmail" component={AllMail} />
-        <Route path="/spam" component={Spam} />
-        <Route path="/trash" component={Trash} />
+        {/* <Route path="/sent" component={Sent} /> */}
+        {/* <Route path="/allmail" component={AllMail} /> */}
+        {/* <Route path="/spam" component={Spam} /> */}
+        {/* <Route path="/trash" component={Trash} /> */}
       </Switch>
     </>
   )
