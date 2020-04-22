@@ -3,7 +3,7 @@ import React from "react";
 // placholder styling
 const styleDiv = {
   margin: "50px auto",
-  backgroundColor: "orange",
+  backgroundColor: "lightgray",
   textAlign: "center",
   width: "60rem"
 }
