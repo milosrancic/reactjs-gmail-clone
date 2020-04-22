@@ -1,14 +1,10 @@
 import React from 'react';
-import Hoc from "../../Hoc";
+import Item from "../../Item";
 
 const Starred = (props) => {
   return (
     <>
-      {/* {console.log("starred:", props)} */}
-      <p>STARRED</p>
-      {props.state.map((item) => 
-        <li key={item.id} onClick={() => props.addToInbox(item)}>{item.email}</li>
-      )}
+      <Item title="Starred" state={props.state}  />
     </>
   )
 }
