@@ -24,15 +24,15 @@ class App extends Component {
       ],
       starred: [
         {
-          id: 1,
+          id: 4,
           email: "Lorem ipsum, dolor sit amet consectetur adipisicing."
         },
         {
-          id: 2,
+          id: 5,
           email: "Lorem ipsum dolor sit amet consectetur."
         },
         {
-          id: 3,
+          id: 6,
           email: "Some awesome email 999"
         }
       ]
@@ -43,10 +43,21 @@ class App extends Component {
     console.log("clicked", id)
   }
 
+  addToInbox = (item) => {
+    this.setState({
+      inbox: [
+        {
+          ...item
+        },        
+        ...this.state.inbox,
+      ]
+    })
+  }
+
   render() {
     return (
       <div className="App">
-        <Layout state={this.state} click={this.onClick} />
+        <Layout state={this.state} click={this.onClick} addToInbox={this.addToInbox} />
       </div>
     )
   }
