@@ -4,7 +4,6 @@ import React from "react";
 const styleDiv = {
   margin: "50px auto",
   backgroundColor: "lightgray",
-  textAlign: "center",
   width: "60rem"
 }
 
