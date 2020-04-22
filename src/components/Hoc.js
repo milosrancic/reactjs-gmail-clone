@@ -15,8 +15,13 @@ const styleDiv = {
 const Hoc = (props) => {
   return (
     <div style={styleDiv}>
+      {/* {console.log("HOC:", props.children[1])} */}
+      {/* {console.log(props.children)}  */}
       <ul>
         {props.children}
+        {props.children.map(item => {
+          console.log(item)
+        })}
       </ul>
     </div>
   )
