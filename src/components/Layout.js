@@ -33,11 +33,12 @@ const Layout = (props) => {
         <Route path="/inbox" 
           render={() => (<Inbox 
             state={props.state.inbox} 
-          click={props.click} />)} />
+          click={props.click}
+           />)} />
         <Route path="/starred" 
           render={() => (<Starred 
           state={props.state.starred} 
-          click={props.click} /> )} />
+          addToInbox={props.addToInbox} /> )} />
         <Route path="/sent" component={Sent} />
         <Route path="/allmail" component={AllMail} />
         <Route path="/spam" component={Spam} />
