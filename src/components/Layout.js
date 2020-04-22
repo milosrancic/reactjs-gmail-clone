@@ -3,16 +3,13 @@ import "./Layout.scss";
 
 import { Switch, Route, NavLink } from "react-router-dom";
 
-// hoc
-// import Hoc from "./Hoc";
-
 // nav
-import AllMail from "./Side/AllMail/AllMail";
+// import AllMail from "./Side/AllMail/AllMail";
 import Inbox from "./Side/Inbox/Inbox";
-import Sent from "./Side/Sent/Sent";
+// import Sent from "./Side/Sent/Sent";
 import Starred from "./Side/Starred/Starred";
-import Trash from "./Side/Trash/Trash";
-import Spam from "./Side/Spam/Spam";
+// import Trash from "./Side/Trash/Trash";
+// import Spam from "./Side/Spam/Spam";
 
 const Layout = (props) => {
   // let state = { ...props.state };
