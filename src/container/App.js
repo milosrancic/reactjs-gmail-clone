@@ -57,7 +57,10 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Layout state={this.state} click={this.onClick} addToInbox={this.addToInbox} />
+        <Layout 
+        state={this.state} 
+        click={this.onClick} 
+        addToInbox={this.addToInbox} />
       </div>
     )
   }
