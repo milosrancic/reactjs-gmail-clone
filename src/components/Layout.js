@@ -4,12 +4,12 @@ import "./Layout.scss";
 import { Switch, Route, NavLink } from "react-router-dom";
 
 // nav
-// import AllMail from "./Side/AllMail/AllMail";
-import Inbox from "./Side/Inbox/Inbox";
-// import Sent from "./Side/Sent/Sent";
-import Starred from "./Side/Starred/Starred";
-// import Trash from "./Side/Trash/Trash";
-// import Spam from "./Side/Spam/Spam";
+// import AllMail from "./AllMail/AllMail";
+import Inbox from "./Inbox/Inbox";
+// import Sent from "./Sent/Sent";
+import Starred from "./Starred/Starred";
+// import Trash from "./Trash/Trash";
+// import Spam from "./Spam/Spam";
 
 const Layout = (props) => {
   // let state = { ...props.state };
