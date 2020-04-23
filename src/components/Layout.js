@@ -30,11 +30,11 @@ const Layout = (props) => {
 
       <Switch>
         <Route 
-        exact
-          path="/" 
+          path="/inbox" 
           render={() => (<Inbox 
           state={props.state.inbox} 
-          click={props.click}/>)} />
+          addToStarred={props.addToStarred}
+          />)} />
         <Route path="/starred" 
           render={() => (<Starred 
           state={props.state.starred} 
