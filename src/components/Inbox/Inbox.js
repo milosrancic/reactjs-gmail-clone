@@ -4,10 +4,11 @@ import Item from "../Item";
 const Inbox = (props) => {
   return (
     <>
-        <Item 
-          title="inbox"
-          state={props.state}
-        />
+      <Item 
+        title="inbox"
+        state={props.state}
+        addToStarred={props.addToStarred}
+       />
   </>
   )
 }

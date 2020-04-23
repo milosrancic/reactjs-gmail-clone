@@ -4,7 +4,11 @@ import Item from "../Item";
 const Starred = (props) => {
   return (
     <>
-      <Item title="Starred" state={props.state}  />
+      <Item 
+        title="starred" 
+        state={props.state}
+        addToInbox={props.addToInbox}
+      />
     </>
   )
 }
