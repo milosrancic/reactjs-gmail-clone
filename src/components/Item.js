@@ -36,15 +36,30 @@ const sender = {
 }
 
 const Item = props => {
-  console.log(props)
+
+  const method = props.addToStarred;
+  console.log('method', method)
+  if (props.title === "inbox") {
+    console.log("inbox")
+    console.log(props.addToStarred)
+  } 
+  if (props.title === "starred") {
+    console.log('starred')
+    console.log(props.addToInbox)
+  }
+
   return (
     <div style={styleDiv}>
+      {console.log({props})}
     <p style={title}>{props.title}</p>
     <ul>
       {props.state.map((item) => 
       <li key={item.id} style={styleLi} >
           <input style={styleCheckbox} type="checkbox"  />
-          <i className="far fa-star" style={star} onClick={()=>{console.log('star is clicked')}}></i>
+          <i 
+            className="far fa-star" 
+            style={star} 
+            onClick={() => props.addToStarred(item)}></i>
           <span style={sender}>{item.sender}</span> <span style={email}>{item.email}</span>
       </li>
         )}
