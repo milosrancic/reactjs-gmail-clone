@@ -10,6 +10,8 @@ import Inbox from "./Inbox/Inbox";
 import Starred from "./Starred/Starred";
 // import Trash from "./Trash/Trash";
 // import Spam from "./Spam/Spam";
+
+// 
 import NotFound from "./NotFound";
 
 const Layout = (props) => {
@@ -26,13 +28,13 @@ const Layout = (props) => {
         {/* <NavLink to="/trash">Trash</NavLink> */}
       </div>
 
-      {/* component={Inbox}  */}
       <Switch>
-        <Route path="/inbox" 
+        <Route 
+        exact
+          path="/" 
           render={() => (<Inbox 
-            state={props.state.inbox} 
-          click={props.click}
-           />)} />
+          state={props.state.inbox} 
+          click={props.click}/>)} />
         <Route path="/starred" 
           render={() => (<Starred 
           state={props.state.starred} 
@@ -41,7 +43,6 @@ const Layout = (props) => {
         {/* <Route path="/allmail" component={AllMail} /> */}
         {/* <Route path="/spam" component={Spam} /> */}
         {/* <Route path="/trash" component={Trash} /> */}
-        <Route component={NotFound} />
       </Switch>
     </>
   )
