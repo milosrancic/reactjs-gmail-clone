@@ -1,15 +1,15 @@
 import React from "react";
 
 const styleDiv = {
-  width: "80%",
+  width: "70%",
   background: "lightgray",
   margin: "3rem auto"
 }
 
 const styleCheckbox = {
-  background: "orange",
-  transform: "scale(1.3)",
-  verticalAlign:"center"
+  // background: "orange",
+  // transform: "scale(1.3)",
+  verticalAlign:"top"
 }
 
 const styleLi = {
@@ -25,6 +25,16 @@ const title = {
   textTransform: "uppercase"
 }
 
+const email = {
+  paddingLeft: "30px",
+
+}
+
+const sender = {
+  // paddingRight: "3rem",
+  // width: "100px"
+}
+
 const Item = props => {
   console.log(props)
   return (
@@ -34,12 +44,12 @@ const Item = props => {
       {props.state.map((item) => 
       <li key={item.id} style={styleLi} >
           <input style={styleCheckbox} type="checkbox"  />
-          <i className="far fa-star" style={star}></i>
-           {item.email}
+          <i className="far fa-star" style={star} onClick={()=>{console.log('star is clicked')}}></i>
+          <span style={sender}>{item.sender}</span> <span style={email}>{item.email}</span>
       </li>
         )}
       </ul>
-      </div>
+    </div>
   )
 }
 
