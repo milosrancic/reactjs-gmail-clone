@@ -45,19 +45,21 @@ class App extends Component {
     }
   };
 
-  onClick = (id) => {
-    console.log("clicked", id)
+  addToInbox = item => {
+    console.log("add to inbox")
+    // this.setState({
+    //   inbox: [
+    //     {
+    //       ...item
+    //     },        
+    //     ...this.state.inbox,
+    //   ]
+    // })
   }
 
-  addToInbox = (item) => {
-    this.setState({
-      inbox: [
-        {
-          ...item
-        },        
-        ...this.state.inbox,
-      ]
-    })
+  addToStarred = (item) => {
+    console.log("add to starred", item)
+    // console.log(item);
   }
 
   render() {
@@ -65,8 +67,8 @@ class App extends Component {
       <div className="App">
         <Layout 
         state={this.state} 
-        click={this.onClick} 
-        addToInbox={this.addToInbox} />
+        addToInbox={this.addToInbox}
+        addToStarred={this.addToStarred} />
       </div>
     )
   }
