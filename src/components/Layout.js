@@ -10,6 +10,7 @@ import Inbox from "./Inbox/Inbox";
 import Starred from "./Starred/Starred";
 // import Trash from "./Trash/Trash";
 // import Spam from "./Spam/Spam";
+import NotFound from "./NotFound";
 
 const Layout = (props) => {
   // let state = { ...props.state };
@@ -40,6 +41,7 @@ const Layout = (props) => {
         {/* <Route path="/allmail" component={AllMail} /> */}
         {/* <Route path="/spam" component={Spam} /> */}
         {/* <Route path="/trash" component={Trash} /> */}
+        <Route component={NotFound} />
       </Switch>
     </>
   )
