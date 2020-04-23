@@ -1,5 +1,11 @@
 import React from "react";
 
+const styleDiv = {
+  width: "80%",
+  background: "lightgray",
+  margin: "3rem auto"
+}
+
 const styleCheckbox = {
   background: "orange",
   transform: "scale(1.3)",
@@ -22,7 +28,7 @@ const title = {
 const Item = props => {
   console.log(props)
   return (
-    <div>
+    <div style={styleDiv}>
     <p style={title}>{props.title}</p>
     <ul>
       {props.state.map((item) => 
