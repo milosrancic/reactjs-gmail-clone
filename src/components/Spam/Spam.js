@@ -1,15 +1,14 @@
-import React from 'react';
+import React from "react";
+import Item from "../Item";
 
 const Spam = (props) => {
   return (
     <>
-      <p>SPAM</p>
-      <li>hardcoded emails</li>
-      <li>hardcoded emails</li>
-      <li>hardcoded emails</li>
-      <li>hardcoded emails</li>
-      <li>hardcoded emails</li>
-    </>
+      <Item 
+        title="spam"
+        state={props.state}
+       />
+  </>
   )
 }
 export default Spam;
