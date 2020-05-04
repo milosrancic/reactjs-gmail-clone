@@ -13,16 +13,34 @@
     .li {
       padding: 10px;
       cursor: pointer;
+      border-left: 3px solid transparent;
+
+      // this delete
+      position: relative;
 
       &:hover {
         border-left: 3px solid black;
-        background: lightgrey;
       }
     }
 
-    .checkbox {
-      vertical-align: top;
+    input[type="checkbox"] {
+      vertical-align: middle;
+      // position: absolute;
+      // border: 1px solid orange;
+      // height: 1rem;
+      // width: 1rem;
+      // background-color: wheat;
+      // -webkit-appearance: none;
+      // -moz-appearance: none;
+      // appearance: none;
     }
+    
+    .checked {
+      background-color: black;
+      color: blue ; 
+      // margin: 20px;
+      padding: 30px;
+  }
 
     .fa-star {
       margin-left: 5px;
