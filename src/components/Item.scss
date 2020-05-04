@@ -1,0 +1,44 @@
+.Item {
+  width: 70%;
+  margin: 3em auto;
+
+  .title {
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  ul {
+    padding-top: 30px;
+
+    .li {
+      padding: 10px;
+      cursor: pointer;
+
+      &:hover {
+        border-left: 3px solid black;
+        background: lightgrey;
+      }
+    }
+
+    .checkbox {
+      vertical-align: top;
+    }
+
+    .fa-star {
+      margin-left: 5px;
+      margin-right: 20px
+    }
+
+    .sender {
+
+    }
+
+    .fa-trash {
+      float: right;
+    }
+
+    .email {
+      padding-left: 30px;
+    }
+  }
+}
