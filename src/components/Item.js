@@ -3,6 +3,7 @@ import "./Item.scss"
 
 
 const Item = props => {
+
   console.log("props", {props})
   // console.log('method', method)
   // if (props.title === "inbox") {
@@ -18,8 +19,8 @@ const Item = props => {
 
       <ul>
         {props.state.map((item) => 
-        <li className="li" key={item.id}>
-            <input type="checkbox"  className="checked" />
+        <li className="li"  key={item.id}>
+            <input type="checkbox"  />
             <i 
               className="far fa-star" 
               onClick={() => (console.log("clicked"))}>
