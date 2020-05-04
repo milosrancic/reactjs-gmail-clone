@@ -25,28 +25,18 @@ class App extends Component {
           email: "lorem ipsum dolor something"
         }
       ],
-      starred: [
+      spam: [
         {
           id: 4,
           sender: "Lily Mike",
           email: "Lorem ipsum, dolor sit amet consectetur adipisicing."
-        },
-        {
-          id: 5,
-          sender: "Paul Awesome",
-          email: "Lorem ipsum dolor sit amet consectetur."
-        },
-        {
-          id: 6,
-          sender: "These Nuts",
-          email: "Some awesome email 999"
         }
       ]
     }
   };
 
   addToInbox = item => {
-    console.log("add to inbox")
+    // console.log("add to inbox")
     // this.setState({
     //   inbox: [
     //     {
@@ -58,17 +48,22 @@ class App extends Component {
   }
 
   addToStarred = (item) => {
-    console.log("add to starred", item)
+    // console.log("add to starred", item)
     // console.log(item);
   }
 
+  addToSpam = item => {
+
+  }
+
   render() {
+    {console.log(this.state.spam)}
     return (
       <div className="App">
         <Layout 
         state={this.state} 
         addToInbox={this.addToInbox}
-        addToStarred={this.addToStarred} />
+      />
       </div>
     )
   }
