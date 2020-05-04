@@ -7,7 +7,6 @@ const Inbox = (props) => {
       <Item 
         title="inbox"
         state={props.state}
-        addToStarred={props.addToStarred}
        />
   </>
   )
