@@ -12,24 +12,28 @@ class App extends Component {
         {
           id: 1,
           sender: "Jane Doe",
-          email: "Lorem ipsum dolor sit amet."
+          email: "Lorem ipsum dolor sit amet.",
+          checked: true
         },
         {
           id: 2,
           sender: "Josh One",
-          email: "Lorem ipsum dolor sit amet, consectetur"
+          email: "Lorem ipsum dolor sit amet, consectetur",
+          checked: false
         },
         {
           id: 3,
           sender: "Mike Mike",
-          email: "lorem ipsum dolor something"
+          email: "lorem ipsum dolor something",
+          checked: false
         }
       ],
       spam: [
         {
           id: 4,
           sender: "Lily Mike",
-          email: "Lorem ipsum, dolor sit amet consectetur adipisicing."
+          email: "Lorem ipsum, dolor sit amet consectetur adipisicing.",
+          checked: true
         }
       ]
     }
