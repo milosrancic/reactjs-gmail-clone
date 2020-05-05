@@ -40,7 +40,7 @@ class App extends Component {
   };
 
   addToInbox = item => {
-    // console.log("add to inbox")
+    console.log("add to inbox")
     // this.setState({
     //   inbox: [
     //     {
@@ -61,7 +61,11 @@ class App extends Component {
   }
 
   addToTrash = item => {
-    
+
+  }
+
+  toggleChecked = item => {
+    console.log(item)
   }
 
   render() {
@@ -70,6 +74,7 @@ class App extends Component {
         <Layout 
         state={this.state} 
         addToInbox={this.addToInbox}
+        toggleChecked={this.toggleChecked}
       />
       </div>
     )
