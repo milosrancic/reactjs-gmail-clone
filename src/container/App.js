@@ -60,8 +60,11 @@ class App extends Component {
 
   }
 
+  addToTrash = item => {
+    
+  }
+
   render() {
-    {console.log(this.state.spam)}
     return (
       <div className="App">
         <Layout 
