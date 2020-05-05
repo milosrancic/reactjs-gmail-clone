@@ -9,7 +9,7 @@ import Inbox from "./Inbox/Inbox";
 import Spam from "./Spam/Spam";
 // import Trash from "./Trash/Trash";
 
-// 
+// implement this one at the end
 // import NotFound from "./NotFound";
 
 const Layout = (props) => {
