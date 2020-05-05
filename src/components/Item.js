@@ -16,14 +16,13 @@ const Item = props => {
 
       <button>mark all</button>
       {/* mark all mark as read/unread  */}
-
       <ul>
-        {props.state.map((item) => 
-        <li className="li"  key={item.id}>
-            <input type="checkbox"  />
+        {props.state.map((item) =>
+        <li className={`li`}  key={item.id}>
+            <input type="checkbox" checked={item.checked}  />
             <i 
               className="far fa-star" 
-              onClick={() => (console.log("clicked"))}>
+              onClick={() => (console.log(item.checked))}>
             </i>
             <span className="sender">{item.sender}</span> 
             <span className="email">{item.email}</span>
