@@ -11,7 +11,7 @@
     padding-top: 30px;
 
     .li {
-      padding: 10px;
+      padding: 15px;
       cursor: pointer;
       border-left: 3px solid transparent;
 
@@ -25,7 +25,7 @@
 
     input[type="checkbox"]:checked  {
       background-color: lightpink;
-      box-shadow: 0 0 0 3px hotpink;
+      box-shadow: 0 0 0 5px hotpink;
       color: lime;
       // position: absolute;
       // border: 1px solid orange;
