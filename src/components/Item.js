@@ -19,7 +19,7 @@ const Item = props => {
       <ul>
         {props.state.map((item) =>
         <li className={`li`}  key={item.id}>
-            <input type="checkbox" checked={item.checked}  />
+            <input type="checkbox"   />
             <i 
               className="far fa-star" 
               onClick={() => (console.log(item.checked))}>
