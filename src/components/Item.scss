@@ -23,8 +23,10 @@
       }
     }
 
-    input[type="checkbox"] {
-
+    input[type="checkbox"]:checked  {
+      background-color: lightpink;
+      box-shadow: 0 0 0 3px hotpink;
+      color: lime;
       // position: absolute;
       // border: 1px solid orange;
       // height: 1rem;
@@ -33,6 +35,10 @@
       // -webkit-appearance: none;
       // -moz-appearance: none;
       // appearance: none;
+    }
+    input:checked + label {
+      color: red;
+      background-color: lime;
     }
     
     .checked {
