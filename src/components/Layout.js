@@ -37,6 +37,7 @@ const Layout = (props) => {
             <Inbox state={inbox} 
             toggleChecked={props.toggleChecked}
             addToTrash={props.addToTrash}
+            addToStarred={props.addToStarred}
              /> )} 
         />
         <Route 
@@ -45,7 +46,9 @@ const Layout = (props) => {
             <Spam state={spam} 
             addToInbox={props.addToInbox}
             toggleChecked={props.toggleChecked}
-            addToTrash={props.addToTrash}  /> )} 
+            addToTrash={props.addToTrash}
+            addToStarred={props.addToStarred}
+            /> )} 
         />
 
         {/* <Route path="/allmail" component={AllMail} /> */}
