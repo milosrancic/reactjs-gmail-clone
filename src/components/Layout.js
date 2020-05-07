@@ -15,7 +15,7 @@ import Spam from "./Spam/Spam";
 const Layout = (props) => {
   // this is redundant delete it at the end
   let {inbox, spam} = { ...props.state };
-  
+
   console.log("layout props from state", props)
 
   // do this for conditional rendering of functions in item component
@@ -35,7 +35,6 @@ const Layout = (props) => {
           path="/inbox" 
           render={() => (
             <Inbox state={inbox} 
-            addToInbox={props.addToInbox} 
             toggleChecked={props.toggleChecked} /> )} 
         />
         <Route 
@@ -54,3 +53,4 @@ const Layout = (props) => {
 };
 
 export default Layout;
+//   
