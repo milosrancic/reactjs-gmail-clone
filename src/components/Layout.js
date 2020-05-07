@@ -13,6 +13,7 @@ import Spam from "./Spam/Spam";
 // import NotFound from "./NotFound";
 
 const Layout = (props) => {
+  // this is redundant delete it at the end
   let {inbox, spam} = { ...props.state };
   console.log("state inbox:", inbox)
   console.log("state spam:", spam)
