@@ -2,8 +2,7 @@ import React from "react";
 import "./Item.scss"
 
 const Item = props => {
-
-  console.log("ITEM props:", {props});
+  // console.log("ITEM props:", {props});
     return (
     <div className="Item">
       <p className="title">{props.title}</p>
@@ -14,11 +13,11 @@ const Item = props => {
         {props.state.map((item) =>
         <li className={`li`}  key={item.id}  >
             <input type="checkbox"  />
-            <i className="far fa-star" 
-            onClick={props.addToStarred ? 
-            () => props.addToStarred(item) :
-            () => false}>
-            </i>
+            {props.addToStarred ?
+                <i className="far fa-star" 
+                 onClick={() => props.addToStarred(item)}></i> :
+                 undefined
+            }
             <span className="sender"
               onClick={
                 props.addToInbox ? 
@@ -37,4 +36,9 @@ const Item = props => {
 
 export default Item;
 
-// () => props.addToInbox(item)
+// initial ternary operator
+{/* <i className="far fa-star" 
+  onClick={props.addToStarred ? 
+  () => props.addToStarred(item) :
+  () => false}>
+</i> */}
