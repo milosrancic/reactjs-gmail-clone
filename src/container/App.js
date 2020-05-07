@@ -52,6 +52,7 @@ class App extends Component {
   }
 
   addToStarred = (item) => {
+    console.log("addToStarred", item)
     // console.log("add to starred", item)
     // console.log(item);
   }
@@ -75,6 +76,7 @@ class App extends Component {
         state={this.state} 
         addToInbox={this.addToInbox}
         addToTrash={this.addToTrash}
+        addToStarred={this.addToStarred}
         toggleChecked={this.toggleChecked}
       />
       </div>
