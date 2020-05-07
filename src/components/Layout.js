@@ -17,6 +17,11 @@ const Layout = (props) => {
   let {inbox, spam} = { ...props.state };
   console.log("state inbox:", inbox)
   console.log("state spam:", spam)
+  console.log("layout props from state", props)
+
+  // do this for conditional rendering of functions in item component
+  console.log(props.addToInbox ? true : false)
+  
   return (
     <>
       <div className="Layout">
@@ -29,18 +34,19 @@ const Layout = (props) => {
       <Switch>
         <Route 
           path="/inbox" 
-          render={() => (
+          render={(props) => (
             <Inbox state={inbox} 
             addToInbox={props.addToInbox} 
             toggleChecked={props.toggleChecked} /> )} 
         />
         <Route 
           path="/spam" 
-          render={() => (
+          render={(props) => (
             <Spam state={spam} 
-            toggleChecked={props.toggleChecked} 
-            addToInbox={props.addToInbox} /> )} 
+            addToInbox={props.addToInbox}
+            toggleChecked={props.toggleChecked}  /> )} 
         />
+
         {/* <Route path="/allmail" component={AllMail} /> */}
         {/* <Route path="/trash" component={Trash} /> */}
       </Switch>
