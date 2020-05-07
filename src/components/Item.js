@@ -4,14 +4,8 @@ import "./Item.scss"
 const Item = props => {
 
   console.log("ITEM props:", {props});
-  // console.log('method', method)
-  // if (props.title === "inbox") {
-    // console.log("inbox")
-    // console.log(props.addToStarred)
-
     return (
     <div className="Item">
-    {console.log("Item passed props:", {props})}
       <p className="title">{props.title}</p>
 
       <button>mark all</button>
@@ -22,7 +16,7 @@ const Item = props => {
             <input type="checkbox"  />
             <i 
               className="far fa-star" 
-              onClick={() => (console.log(item))}>
+              onClick={() => props.addToStarred(item)}>
             </i>
             <span className="sender"
               onClick={
