@@ -35,6 +35,13 @@ class App extends Component {
           email: "Lorem ipsum, dolor sit amet consectetur adipisicing.",
           checked: true
         }
+      ],
+      trash : [
+        {
+          id: 5,
+          sender: "Mike Mikey",
+          email: "this email is in trash"
+        }
       ]
     }
   };
