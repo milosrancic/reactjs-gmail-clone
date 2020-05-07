@@ -1,18 +1,17 @@
 import React from "react";
 import "./Item.scss"
 
-// figure out passing functions to item 
 const Item = props => {
 
-  console.log("ITEM props:", {props})
+  console.log("ITEM props:", {props});
   // console.log('method', method)
   // if (props.title === "inbox") {
     // console.log("inbox")
     // console.log(props.addToStarred)
-   
-  return (
+
+    return (
     <div className="Item">
-    {console.log("passed props:", {props})}
+    {console.log("Item passed props:", {props})}
       <p className="title">{props.title}</p>
 
       <button>mark all</button>
@@ -26,7 +25,11 @@ const Item = props => {
               onClick={() => (console.log(item))}>
             </i>
             <span className="sender"
-              onClick={() => props.addToInbox(item)}
+              onClick={
+                props.addToInbox ? 
+                () => props.addToInbox(item) : 
+                () => false
+                }
             >{item.sender}</span> 
             <span className="email">{item.email}</span>
             <i className="fas fa-trash"></i>
@@ -38,3 +41,5 @@ const Item = props => {
 }
 
 export default Item;
+
+// () => props.addToInbox(item)
