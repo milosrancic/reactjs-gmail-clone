@@ -7,7 +7,7 @@ import { Switch, Route, NavLink } from "react-router-dom";
 // import AllMail from "./AllMail/AllMail";
 import Inbox from "./Inbox/Inbox";
 import Spam from "./Spam/Spam";
-// import Trash from "./Trash/Trash";
+import Trash from "./Trash/Trash";
 
 // implement this one at the end
 // import NotFound from "./NotFound";
@@ -15,19 +15,14 @@ import Spam from "./Spam/Spam";
 const Layout = (props) => {
   // this is redundant delete it at the end
   let {inbox, spam} = { ...props.state };
-
   console.log("layout props from state", props)
-
-  // do this for conditional rendering of functions in item component
-  console.log(props.addToInbox ? true : false)
-
   return (
     <>
       <div className="Layout">
         <NavLink to="/inbox">Inbox</NavLink>
         <NavLink to="/spam">Spam</NavLink>
         {/* <NavLink to="/allmail">All Mail</NavLink> */}
-        {/* <NavLink to="/trash">Trash</NavLink> */}
+        <NavLink to="/trash">Trash</NavLink>
       </div>
 
       <Switch>
@@ -38,7 +33,7 @@ const Layout = (props) => {
             toggleChecked={props.toggleChecked}
             addToTrash={props.addToTrash}
             addToStarred={props.addToStarred}
-             /> )} 
+            /> )} 
         />
         <Route 
           path="/spam" 
@@ -52,7 +47,7 @@ const Layout = (props) => {
         />
 
         {/* <Route path="/allmail" component={AllMail} /> */}
-        {/* <Route path="/trash" component={Trash} /> */}
+        <Route path="/trash" component={Trash} />
       </Switch>
     </>
   )
