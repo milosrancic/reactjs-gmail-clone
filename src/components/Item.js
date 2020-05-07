@@ -32,7 +32,7 @@ const Item = props => {
                 }
             >{item.sender}</span> 
             <span className="email">{item.email}</span>
-            <i className="fas fa-trash"></i>
+            <i className="fas fa-trash" onClick={() => props.addToTrash(item)}></i>
         </li>
           )}
       </ul>
