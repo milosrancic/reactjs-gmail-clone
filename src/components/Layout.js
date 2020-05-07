@@ -35,14 +35,17 @@ const Layout = (props) => {
           path="/inbox" 
           render={() => (
             <Inbox state={inbox} 
-            toggleChecked={props.toggleChecked} /> )} 
+            toggleChecked={props.toggleChecked}
+            addToTrash={props.addToTrash}
+             /> )} 
         />
         <Route 
           path="/spam" 
           render={() => (
             <Spam state={spam} 
             addToInbox={props.addToInbox}
-            toggleChecked={props.toggleChecked}  /> )} 
+            toggleChecked={props.toggleChecked}
+            addToTrash={props.addToTrash}  /> )} 
         />
 
         {/* <Route path="/allmail" component={AllMail} /> */}
