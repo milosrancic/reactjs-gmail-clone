@@ -14,7 +14,7 @@ import Trash from "./Trash/Trash";
 
 const Layout = (props) => {
   // this is redundant delete it at the end
-  let {inbox, spam} = { ...props.state };
+  let {inbox, spam, trash} = { ...props.state };
   console.log("layout props from state", props)
   return (
     <>
@@ -47,7 +47,10 @@ const Layout = (props) => {
         />
 
         {/* <Route path="/allmail" component={AllMail} /> */}
-        <Route path="/trash" component={Trash} />
+        <Route path="/trash" 
+        render ={() => (
+          <Trash state={trash}/>
+        )} />
       </Switch>
     </>
   )
