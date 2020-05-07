@@ -14,9 +14,10 @@ const Item = props => {
         {props.state.map((item) =>
         <li className={`li`}  key={item.id}  >
             <input type="checkbox"  />
-            <i 
-              className="far fa-star" 
-              onClick={() => props.addToStarred(item)}>
+            <i className="far fa-star" 
+            onClick={props.addToStarred ? 
+            () => props.addToStarred(item) :
+            () => false}>
             </i>
             <span className="sender"
               onClick={
@@ -26,7 +27,7 @@ const Item = props => {
                 }
             >{item.sender}</span> 
             <span className="email">{item.email}</span>
-            <i className="fas fa-trash" onClick={() => props.addToTrash(item)}></i>
+            <i className="fas fa-trash" onClick={props.addToTrash ? () => props.addToTrash(item) : () => false }></i>
         </li>
           )}
       </ul>
