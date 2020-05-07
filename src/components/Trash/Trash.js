@@ -1,15 +1,14 @@
-import React from 'react';
+import React from "react";
+import Item from "../Item";
 
 
-const Trash = () => {
+const Trash = props => {
   return (
     <>
-      <p>TRASH</p>
-      <li>email one</li>
-      <li>email two</li>
-      <li>email three</li>
-      <li>email four</li>
-      <li>email five</li>
+    <Item 
+        title="inbox"
+        state={props.state}
+       />
     </>
   )
 }
