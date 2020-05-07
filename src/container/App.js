@@ -40,7 +40,7 @@ class App extends Component {
   };
 
   addToInbox = item => {
-    console.log("add to inbox")
+    console.log("add to inbox", item)
     // this.setState({
     //   inbox: [
     //     {
@@ -65,7 +65,7 @@ class App extends Component {
   }
 
   toggleChecked = item => {
-    console.log(item)
+    console.log("toggleChecked:", item)
   }
 
   render() {
