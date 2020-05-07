@@ -7,6 +7,8 @@ const Spam = (props) => {
       <Item 
         title="spam"
         state={props.state}
+        addToInbox={props.addToInbox}
+        toggleChecked={props.toggleChecked}
        />
   </>
   )
