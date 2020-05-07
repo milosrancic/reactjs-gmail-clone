@@ -15,7 +15,7 @@ import Trash from "./Trash/Trash";
 const Layout = (props) => {
   // this is redundant delete it at the end
   let {inbox, spam, trash} = { ...props.state };
-  console.log("layout props from state", props)
+  // console.log("layout props from state", props)
   return (
     <>
       <div className="Layout">
