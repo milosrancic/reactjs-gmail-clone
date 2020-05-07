@@ -9,6 +9,7 @@ const Spam = (props) => {
         state={props.state}
         addToInbox={props.addToInbox}
         toggleChecked={props.toggleChecked}
+        addToTrash={props.addToTrash}
        />
   </>
   )
