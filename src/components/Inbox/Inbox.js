@@ -7,6 +7,8 @@ const Inbox = (props) => {
       <Item 
         title="inbox"
         state={props.state}
+        addToInbox={props.addToInbox}
+        toggleChecked={props.toggleChecked}
        />
   </>
   )
