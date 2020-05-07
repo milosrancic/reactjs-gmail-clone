@@ -61,7 +61,7 @@ class App extends Component {
   }
 
   addToTrash = item => {
-
+    console.log("trash", item)
   }
 
   toggleChecked = item => {
@@ -74,6 +74,7 @@ class App extends Component {
         <Layout 
         state={this.state} 
         addToInbox={this.addToInbox}
+        addToTrash={this.addToTrash}
         toggleChecked={this.toggleChecked}
       />
       </div>
