@@ -4,12 +4,7 @@ import "./Item.scss"
 
 const Item = props => {
 
-  // wont work need to be ul > li
-  {props.state.map((item) => {
-    console.log(item.checked);
-    let {id, sender, email, checked} ={item};
-  })}
-  console.log("passed props:", {props})
+  console.log("ITEM props:", {props})
   // console.log('method', method)
   // if (props.title === "inbox") {
     // console.log("inbox")
