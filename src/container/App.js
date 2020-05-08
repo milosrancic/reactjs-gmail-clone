@@ -13,19 +13,22 @@ class App extends Component {
           id: 1,
           sender: "Jane Doe",
           email: "Lorem ipsum dolor sit amet.",
-          checked: false
+          checked: false,
+          starred: true
         },
         {
           id: 2,
           sender: "Josh One",
           email: "Lorem ipsum dolor sit amet, consectetur",
-          checked: false
+          checked: false,
+          starred: false
         },
         {
           id: 3,
           sender: "Mike Mike",
           email: "random placeholder text",
-          checked: true
+          checked: true,
+          starred: true
         }
       ],
       spam: [
@@ -33,13 +36,15 @@ class App extends Component {
           id: 4,
           sender: "Lily Mike",
           email: "Lorem ipsum, dolor sit amet consectetur adipisicing.",
-          checked: true
+          checked: true,
+          starred: false
         },
         {
           id: 5,
           sender: "As Die",
           email: "some random text in email body",
-          checked: false
+          checked: false,
+          starred: true
         }
       ],
       trash : [
@@ -47,7 +52,8 @@ class App extends Component {
           id: 6,
           sender: "Mike Mikey",
           email: "this email is in trash",
-          checked: false
+          checked: false,
+          starred: false
         }
       ]
     }
@@ -67,6 +73,7 @@ class App extends Component {
 
   addToStarred = (item) => {
     console.log("addToStarred", item)
+
     // console.log("add to starred", item)
     // console.log(item);
   }
@@ -80,9 +87,9 @@ class App extends Component {
   }
 
   toggleChecked = item => {
-    console.log(this.state.inbox[item])
-    console.log("original checked state",   
-    item.checked, !item.checked);
+    // console.log(this.state.inbox[item])
+    // console.log("original checked state",   
+    // item.checked, !item.checked);
 
     // this.setState( prevState => ({
     //  checked: !prevState.checked
