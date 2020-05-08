@@ -8,6 +8,7 @@ const Trash = props => {
     <Item 
         title="inbox"
         state={props.state}
+        toggleChecked={props.toggleChecked}
        />
     </>
   )
