@@ -15,11 +15,15 @@ const Item = props => {
             <input type="checkbox" 
             onChange={() => props.toggleChecked(item)} 
             checked={item.checked}  />
-            {props.addToStarred ?
-                <i className="far fa-star" 
-                 onClick={() => props.addToStarred(item)}></i> :
-                 undefined
-            }
+            <i className=
+              {item.starred ? `fas fa-star starred` : `fas fa-star`}
+              
+                onClick={
+                  props.addToStarred ? () => props.addToStarred(item) : undefined
+                }
+            ></i>
+
+            
             <span className="sender"
               onClick={
                 props.addToInbox ? 
@@ -42,6 +46,15 @@ const Item = props => {
 }
 
 export default Item;
+
+{/* {props.addToStarred ?
+                <i className="fas fa-star" 
+                 onClick={() => props.addToStarred(item)}></i> :
+                 undefined
+            } */}
+
+
+
 
 // initial ternary operator
 {/* <i className="far fa-star" 
