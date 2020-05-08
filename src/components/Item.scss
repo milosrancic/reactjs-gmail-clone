@@ -1,5 +1,5 @@
 .Item {
-  width: 70%;
+  width: 80%;
   margin: 3em auto;
 
   .title {
@@ -47,9 +47,17 @@
 
     .fa-star {
       margin-left: 5px;
-      margin-right: 20px
+      margin-right: 20px;
+      color: white;
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: black;
+      
     }
-
+    .starred {
+      color: gold;
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: black;
+    }
     .sender {
 
     }
