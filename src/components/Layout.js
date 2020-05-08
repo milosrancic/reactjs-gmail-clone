@@ -33,6 +33,7 @@ const Layout = (props) => {
             toggleChecked={props.toggleChecked}
             addToTrash={props.addToTrash}
             addToStarred={props.addToStarred}
+            toggleChecked={props.toggleChecked}
             /> )} 
         />
         <Route 
@@ -49,7 +50,9 @@ const Layout = (props) => {
         {/* <Route path="/allmail" component={AllMail} /> */}
         <Route path="/trash" 
         render ={() => (
-          <Trash state={trash}/>
+          <Trash state={trash}
+          toggleChecked={props.toggleChecked}
+          />
         )} />
       </Switch>
     </>
