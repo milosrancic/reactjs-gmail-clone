@@ -79,13 +79,29 @@ class App extends Component {
     console.log("trash", item)
   }
 
-  toggleChecked = (item) => {
-    console.log("toggleChecked:",   item);
+  toggleChecked = itemId => {
+    console.log("original checked state",   this.state.checked);
 
-    // this.setState( prevState, item => ({
+    // this.setState( prevState => ({
     //  checked: !prevState.checked
     // }))
-    this.setState({ checked: !this.state[item.id]  })
+    
+    // this.setState({ checked: !this.state.checked  })
+
+    // this.setState(prevState => {
+    //   const {message} = prevState;
+    //   const i = message.indexOf(itemId);
+    //   if (i === -1) {
+    //     console.log('something')
+    //   } else {
+    //     console.log(' else')
+    //   }
+    //   return {message};
+    // })
+
+      console.log("after checked state:", this.state.checked)
+
+      // console.log("item state:", item.checked)
   }
 
   render() {
