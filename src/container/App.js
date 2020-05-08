@@ -13,7 +13,7 @@ class App extends Component {
           id: 1,
           sender: "Jane Doe",
           email: "Lorem ipsum dolor sit amet.",
-          checked: true
+          checked: false
         },
         {
           id: 2,
@@ -24,8 +24,8 @@ class App extends Component {
         {
           id: 3,
           sender: "Mike Mike",
-          email: "lorem ipsum dolor something",
-          checked: false
+          email: "random placeholder text",
+          checked: true
         }
       ],
       spam: [
@@ -34,13 +34,20 @@ class App extends Component {
           sender: "Lily Mike",
           email: "Lorem ipsum, dolor sit amet consectetur adipisicing.",
           checked: true
+        },
+        {
+          id: 5,
+          sender: "As Die",
+          email: "some random text in email body",
+          checked: false
         }
       ],
       trash : [
         {
-          id: 5,
+          id: 6,
           sender: "Mike Mikey",
-          email: "this email is in trash"
+          email: "this email is in trash",
+          checked: false
         }
       ]
     }
@@ -72,8 +79,13 @@ class App extends Component {
     console.log("trash", item)
   }
 
-  toggleChecked = item => {
-    console.log("toggleChecked:", item)
+  toggleChecked = (item) => {
+    console.log("toggleChecked:",   item);
+
+    // this.setState( prevState, item => ({
+    //  checked: !prevState.checked
+    // }))
+    this.setState({ checked: !this.state[item.id]  })
   }
 
   render() {
