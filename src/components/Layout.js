@@ -14,7 +14,7 @@ import Trash from "./Trash/Trash";
 
 const Layout = (props) => {
   // this is redundant delete it at the end
-  let {inbox, spam, trash} = { ...props.state };
+  // let {inbox, spam, trash} = { ...props.state };
   // console.log("layout props from state", props)
   return (
     <>
@@ -29,7 +29,7 @@ const Layout = (props) => {
         <Route 
           path="/inbox" 
           render={() => (
-            <Inbox state={inbox} 
+            <Inbox state={props.state.inbox} 
             toggleChecked={props.toggleChecked}
             addToTrash={props.addToTrash}
             addToStarred={props.addToStarred}
@@ -39,7 +39,7 @@ const Layout = (props) => {
         <Route 
           path="/spam" 
           render={() => (
-            <Spam state={spam} 
+            <Spam state={props.state.spam} 
             addToInbox={props.addToInbox}
             toggleChecked={props.toggleChecked}
             addToTrash={props.addToTrash}
@@ -50,7 +50,7 @@ const Layout = (props) => {
         {/* <Route path="/allmail" component={AllMail} /> */}
         <Route path="/trash" 
         render ={() => (
-          <Trash state={trash}
+          <Trash state={props.state.trash}
           toggleChecked={props.toggleChecked}
           />
         )} />
