@@ -10,9 +10,9 @@ const Item = props => {
       <button>mark all</button>
       {/* mark all mark as read/unread  */}
       <ul>
-        {props.state.map((item) =>
-        <li className={`li`}  key={item.id}  >
-            <input type="checkbox"  />
+        {props.state.map(item =>
+        <li className="li"  key={item.id}>
+            <input type="checkbox" onChange={() => props.toggleChecked(item)} checked={item.checked}  />
             {props.addToStarred ?
                 <i className="far fa-star" 
                  onClick={() => props.addToStarred(item)}></i> :
@@ -23,10 +23,15 @@ const Item = props => {
                 props.addToInbox ? 
                 () => props.addToInbox(item) : 
                 () => false
-                }
+              }
             >{item.sender}</span> 
             <span className="email">{item.email}</span>
-            <i className="fas fa-trash" onClick={props.addToTrash ? () => props.addToTrash(item) : () => false }></i>
+            <i className="fas fa-trash" 
+              onClick={
+                props.addToTrash ? 
+                () => props.addToTrash(item) :
+                () => false 
+              }></i>
         </li>
           )}
       </ul>
