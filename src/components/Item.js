@@ -12,7 +12,9 @@ const Item = props => {
       <ul>
         {props.state.map(item =>
         <li className="li"  key={item.id}>
-            <input type="checkbox" onChange={() => props.toggleChecked(item.id)} checked={item.checked}  />
+            <input type="checkbox" 
+            onChange={() => props.toggleChecked(item)} 
+            checked={item.checked}  />
             {props.addToStarred ?
                 <i className="far fa-star" 
                  onClick={() => props.addToStarred(item)}></i> :
