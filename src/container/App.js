@@ -79,13 +79,15 @@ class App extends Component {
     console.log("trash", item)
   }
 
-  toggleChecked = itemId => {
-    console.log("original checked state",   this.state.checked);
+  toggleChecked = item => {
+    console.log(this.state.inbox[item])
+    console.log("original checked state",   
+    item.checked, !item.checked);
 
     // this.setState( prevState => ({
     //  checked: !prevState.checked
     // }))
-    
+
     // this.setState({ checked: !this.state.checked  })
 
     // this.setState(prevState => {
@@ -99,7 +101,7 @@ class App extends Component {
     //   return {message};
     // })
 
-      console.log("after checked state:", this.state.checked)
+      // console.log("after checked state:", this.state[item])
 
       // console.log("item state:", item.checked)
   }
