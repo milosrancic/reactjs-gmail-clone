@@ -17,13 +17,11 @@ const Item = props => {
             checked={item.checked}  />
             <i className=
               {item.starred ? `fas fa-star starred` : `fas fa-star`}
-              
                 onClick={
                   props.addToStarred ? () => props.addToStarred(item) : undefined
-                }
-            ></i>
+                }>
+            </i>
 
-            
             <span className="sender"
               onClick={
                 props.addToInbox ? 
@@ -31,13 +29,15 @@ const Item = props => {
                 () => false
               }
             >{item.sender}</span> 
+
             <span className="email">{item.email}</span>
             <i className="fas fa-trash" 
               onClick={
                 props.addToTrash ? 
                 () => props.addToTrash(item) :
                 () => false 
-              }></i>
+              }>
+            </i>
         </li>
           )}
       </ul>
