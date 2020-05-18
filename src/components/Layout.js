@@ -48,8 +48,9 @@ const Layout = (props) => {
         />
 
         {/* <Route path="/allmail" component={AllMail} /> */}
-        <Route path="/trash" 
-        render ={() => (
+        <Route 
+          path="/trash" 
+          render ={() => (
           <Trash state={props.state.trash}
           toggleChecked={props.toggleChecked}
           />
