@@ -9,7 +9,7 @@ const Item = props => {
       <button>mark all</button>
       {/* mark all mark as read/unread  */}
       <ul>
-        {props.state.map(item =>
+        {props.state.map((item, index) =>
         <li className="li"  key={item.id}>
             <input type="checkbox" 
             onChange={() => props.toggleChecked(item)} 
@@ -33,7 +33,7 @@ const Item = props => {
             <i className="fas fa-trash" 
               onClick={
                 props.addToTrash ? 
-                () => props.addToTrash(item) :
+                () => props.addToTrash(item, index) :
                 () => false 
               }>
             </i>
