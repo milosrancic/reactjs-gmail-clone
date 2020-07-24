@@ -62,16 +62,15 @@ const App = () => {
           inbox={inbox}
           spam={spam}
           trash={trash}
-
+          addToInbox={addToInbox}
+          addToTrash={addToTrash}
+          addToStarred={addToStarred}
+          toggleChecked={toggleChecked}
       />
       </div>
     )
   }
   
-//   addToInbox={this.addToInbox}
-//   addToTrash={this.addToTrash}
-//   addToStarred={this.addToStarred}
-//  toggleChecked={this.toggleChecked} 
 
   const addToInbox = item => {
     console.log("add to inbox", item)
@@ -97,10 +96,11 @@ const App = () => {
   }
 
   const addToTrash = item => {
-    console.log("trash", item)
+    console.log("add to trash", item)
   }
 
   const toggleChecked = item => {
+    console.log("toggle checked", item)
     // console.log(this.state.inbox[item])
     // console.log("original checked state",   
     // item.checked, !item.checked);

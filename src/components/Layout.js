@@ -30,32 +30,32 @@ const Layout = (props) => {
           path="/inbox" 
           render={() => (
             <Inbox state={props.inbox} 
-            /> )} 
-        />
-            {/* toggleChecked={props.toggleChecked}
+            toggleChecked={props.toggleChecked}
             addToTrash={props.addToTrash}
             addToStarred={props.addToStarred}
-            toggleChecked={props.toggleChecked} */}
+            toggleChecked={props.toggleChecked}
+            /> )} 
+        />
 
         <Route 
           path="/spam" 
           render={() => (
             <Spam state={props.spam} 
-            /> )} 
-        />
-            {/* addToInbox={props.addToInbox}
+            addToInbox={props.addToInbox}
             toggleChecked={props.toggleChecked}
             addToTrash={props.addToTrash}
-            addToStarred={props.addToStarred} */}
+            addToStarred={props.addToStarred}
+            /> )} 
+        />
 
         {/* <Route path="/allmail" component={AllMail} /> */}
         <Route 
           path="/trash" 
           render ={() => (
           <Trash state={props.trash}
+          toggleChecked={props.toggleChecked}
           />
         )} />
-          {/* toggleChecked={props.toggleChecked} */}
       </Switch>
     </>
   )
