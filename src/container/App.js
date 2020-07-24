@@ -4,9 +4,9 @@ import './App.scss';
 import Layout from "../components/Layout";
 
 const App = () => {
-  const [state, setState] = useState([
+  
+  const [inbox, setInbox] = useState([
     {
-      tag: "inbox",
       id: 1,
       sender: "Jane Doe",
       email: "Lorem ipsum dorom sit amet.",
@@ -14,7 +14,6 @@ const App = () => {
       starred: true
     },
     {
-      tag: "inbox",
       id: 2,
       sender: "Josh One",
       email: "Lorem ipsum dolor sit amet, consectetur",
@@ -22,15 +21,16 @@ const App = () => {
       starred: false 
     },
     {
-      tag: "inbox",
       id: 3,
       sender: "Mike Mike",
       email: "random placeholder text",
       checked: true,
       starred: true
-    },
+    }
+  ]);
+
+  const [spam, setSpam] = useState([
     {
-      tag: "spam",
       id: 4,
       sender: "Lily Mike",
       email: "Lorem ipsum, dolor sit amet consectetur adipisicing.",
@@ -38,15 +38,16 @@ const App = () => {
       starred: false
     },
     {
-      tag: "spam",
       id: 5,
       sender: "As Die",
       email: "some random text in email body",
       checked: false,
       starred: true
-    },
+    }
+  ]);
+
+  const [trash, setTrash] = useState([
     {
-      tag: "trash",
       id: 6,
       sender: "Mike Mikey",
       email: "this email is in trash",
@@ -58,7 +59,10 @@ const App = () => {
     return (
       <div className="App">
         <Layout 
-        state={state} 
+          inbox={inbox}
+          spam={spam}
+          trash={trash}
+
       />
       </div>
     )
