@@ -29,7 +29,7 @@ const Layout = (props) => {
         <Route 
           path="/inbox" 
           render={() => (
-            <Inbox state={props.state} 
+            <Inbox state={props.inbox} 
             /> )} 
         />
             {/* toggleChecked={props.toggleChecked}
@@ -40,7 +40,7 @@ const Layout = (props) => {
         <Route 
           path="/spam" 
           render={() => (
-            <Spam state={props.state} 
+            <Spam state={props.spam} 
             /> )} 
         />
             {/* addToInbox={props.addToInbox}
@@ -52,7 +52,7 @@ const Layout = (props) => {
         <Route 
           path="/trash" 
           render ={() => (
-          <Trash state={props.state}
+          <Trash state={props.trash}
           />
         )} />
           {/* toggleChecked={props.toggleChecked} */}
