@@ -71,7 +71,8 @@ const App = () => {
     // if email is from inbox
     if (item.tag === "inbox") {
       // remove that email from inbox
-      setInbox([...inbox, inbox.filter(index !== item)])
+      // setInbox([...inbox, inbox.filter(index !== item)])
+      setInbox([...inbox.filter(item.id !== index)])
       // setInbox([...inbox.splice(index, 1)])
     }
 
