@@ -6,7 +6,7 @@ const Trash = props => {
   return (
     <>
     <Item 
-        title="inbox"
+        title="trash"
         state={props.state}
         toggleChecked={props.toggleChecked}
        />
