@@ -7,6 +7,7 @@ const App = () => {
   
   const [inbox, setInbox] = useState([
     {
+      tag: "inbox",
       id: 1,
       sender: "Jane Doe",
       email: "Lorem ipsum dorom sit amet.",
@@ -14,6 +15,7 @@ const App = () => {
       starred: true
     },
     {
+      tag: "inbox",
       id: 2,
       sender: "Josh One",
       email: "Lorem ipsum dolor sit amet, consectetur",
@@ -21,6 +23,7 @@ const App = () => {
       starred: false 
     },
     {
+      tag: "inbox",
       id: 3,
       sender: "Mike Mike",
       email: "random placeholder text",
@@ -31,6 +34,7 @@ const App = () => {
 
   const [spam, setSpam] = useState([
     {
+      tag: "spam",
       id: 4,
       sender: "Lily Mike",
       email: "Lorem ipsum, dolor sit amet consectetur adipisicing.",
@@ -38,6 +42,7 @@ const App = () => {
       starred: false
     },
     {
+      tag: "spam",
       id: 5,
       sender: "As Die",
       email: "some random text in email body",
@@ -48,6 +53,7 @@ const App = () => {
 
   const [trash, setTrash] = useState([
     {
+      tag: "trash",
       id: 6,
       sender: "Mike Mikey",
       email: "this email is in trash",
@@ -56,22 +62,26 @@ const App = () => {
     }
   ]);
 
-    return (
-      <div className="App">
-        <Layout 
-          inbox={inbox}
-          spam={spam}
-          trash={trash}
-          addToInbox={addToInbox}
-          addToTrash={addToTrash}
-          addToStarred={addToStarred}
-          toggleChecked={toggleChecked}
-      />
-      </div>
-    )
+  const addToTrash = (item, index) => {
+    console.log("add to trash", item);
+    setTrash([item, ...trash ]);
+
+    // item.filter({})
+
+    // if email is from inbox
+    if (item.tag === "inbox") {
+      // remove that email from inbox
+      setInbox([...inbox, inbox.filter(index !== item)])
+      // setInbox([...inbox.splice(index, 1)])
+    }
+
+    // if email is from spam
+    if (item.tag === "spam") {
+      // remove that email from spam
+      // setSpam([])
+    }
   }
   
-
   const addToInbox = item => {
     console.log("add to inbox", item)
     // this.setState({
@@ -95,9 +105,7 @@ const App = () => {
 
   }
 
-  const addToTrash = item => {
-    console.log("add to trash", item)
-  }
+  
 
   const toggleChecked = item => {
     console.log("toggle checked", item)
@@ -126,6 +134,22 @@ const App = () => {
 
       // console.log("item state:", item.checked)
   }
+    return (
+      <div className="App">
+        <Layout 
+          inbox={inbox}
+          spam={spam}
+          trash={trash}
+          addToInbox={addToInbox}
+          addToTrash={addToTrash}
+          addToStarred={addToStarred}
+          toggleChecked={toggleChecked}
+      />
+      </div>
+    )
+  }
+  
+
 
 
 export default App;
