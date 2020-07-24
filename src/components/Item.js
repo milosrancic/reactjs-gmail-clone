@@ -2,7 +2,7 @@ import React from "react";
 import "./Item.scss"
 
 const Item = props => {
-  // console.log("ITEM props:", {props});
+  console.log("ITEM props:", {props});
     return (
     <div className="Item">
       <p className="title">{props.title}</p>
