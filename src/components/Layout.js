@@ -29,32 +29,33 @@ const Layout = (props) => {
         <Route 
           path="/inbox" 
           render={() => (
-            <Inbox state={props.state.inbox} 
-            toggleChecked={props.toggleChecked}
-            addToTrash={props.addToTrash}
-            addToStarred={props.addToStarred}
-            toggleChecked={props.toggleChecked}
+            <Inbox state={props.state} 
             /> )} 
         />
+            {/* toggleChecked={props.toggleChecked}
+            addToTrash={props.addToTrash}
+            addToStarred={props.addToStarred}
+            toggleChecked={props.toggleChecked} */}
+
         <Route 
           path="/spam" 
           render={() => (
-            <Spam state={props.state.spam} 
-            addToInbox={props.addToInbox}
-            toggleChecked={props.toggleChecked}
-            addToTrash={props.addToTrash}
-            addToStarred={props.addToStarred}
+            <Spam state={props.state} 
             /> )} 
         />
+            {/* addToInbox={props.addToInbox}
+            toggleChecked={props.toggleChecked}
+            addToTrash={props.addToTrash}
+            addToStarred={props.addToStarred} */}
 
         {/* <Route path="/allmail" component={AllMail} /> */}
         <Route 
           path="/trash" 
           render ={() => (
-          <Trash state={props.state.trash}
-          toggleChecked={props.toggleChecked}
+          <Trash state={props.state}
           />
         )} />
+          {/* toggleChecked={props.toggleChecked} */}
       </Switch>
     </>
   )
