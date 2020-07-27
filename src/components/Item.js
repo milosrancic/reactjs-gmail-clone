@@ -22,8 +22,6 @@ const Item = props => {
         }
       </div>
       
-      {/* mark all mark as read/unread  */}
-      {/* <button>mark all</button> */}
       <ul>
         {props.state.map(item =>
         <li className="li"  key={item.id}>
