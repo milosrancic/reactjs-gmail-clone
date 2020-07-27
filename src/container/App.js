@@ -63,9 +63,8 @@ const App = () => {
   ]);
 
   const addToTrash = item => {
-    console.log("add to trash", item);
+    // console.log("add to trash", item);
     setTrash([item, ...trash ]);
-
 
     // CHECK THOSE IF STATEMENTS
     // if email is from inbox
@@ -82,7 +81,7 @@ const App = () => {
   }
   
   const addToInbox = item => {
-    console.log("add to inbox", item)
+    // console.log("add to inbox", item)
     // this.setState({
     //   inbox: [
     //     {
@@ -94,44 +93,24 @@ const App = () => {
   }
 
   const addToStarred = (item) => {
-    console.log("addToStarred", item)
+    // console.log("addToStarred", item)
 
     // console.log("add to starred", item)
     // console.log(item);
   }
 
   const addToSpam = item => {
-
+    console.log("addtoSPAM: ", item)
   }
 
   
 
   const toggleChecked = item => {
     console.log("toggle checked", item)
+    setInbox([item => !item.checked])
     // console.log(this.state.inbox[item])
     // console.log("original checked state",   
     // item.checked, !item.checked);
-
-    // this.setState( prevState => ({
-    //  checked: !prevState.checked
-    // }))
-
-    // this.setState({ checked: !this.state.checked  })
-
-    // this.setState(prevState => {
-    //   const {message} = prevState;
-    //   const i = message.indexOf(itemId);
-    //   if (i === -1) {
-    //     console.log('something')
-    //   } else {
-    //     console.log(' else')
-    //   }
-    //   return {message};
-    // })
-
-      // console.log("after checked state:", this.state[item])
-
-      // console.log("item state:", item.checked)
   }
     return (
       <div className="App">
