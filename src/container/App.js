@@ -83,7 +83,7 @@ const App = () => {
     // if email is from spam
     if (item.tag === "spam") {
       // remove that email from spam
-      // setSpam([])
+      setSpam([...spam.filter(spam => spam !== item)])
     }
   }
   
