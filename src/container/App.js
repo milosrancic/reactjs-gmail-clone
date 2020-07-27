@@ -27,7 +27,7 @@ const App = () => {
       id: 3,
       sender: "Mike Mike",
       email: "random placeholder text",
-      checked: true,
+      checked: false,
       starred: true
     }
   ]);
@@ -38,7 +38,7 @@ const App = () => {
       id: 4,
       sender: "Lily Mike",
       email: "Lorem ipsum, dolor sit amet consectetur adipisicing.",
-      checked: true,
+      checked: false,
       starred: false
     },
     {
@@ -47,7 +47,7 @@ const App = () => {
       sender: "As Die",
       email: "some random text in email body",
       checked: false,
-      starred: true
+      starred: false
     }
   ]);
 
@@ -66,6 +66,8 @@ const App = () => {
     console.log("add to trash", item);
     setTrash([item, ...trash ]);
 
+
+    // CHECK THOSE IF STATEMENTS
     // if email is from inbox
     // if (item.tag === "inbox") {
       // remove that email from inbox
