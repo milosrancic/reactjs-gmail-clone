@@ -62,19 +62,23 @@ const App = () => {
     }
   ]);
 
-  const addToTrash = (item, index) => {
+  const addToTrash = item => {
     console.log("add to trash", item);
     setTrash([item, ...trash ]);
 
     // item.filter({})
 
     // if email is from inbox
-    if (item.tag === "inbox") {
+    // if (item.tag === "inbox") {
       // remove that email from inbox
-      // setInbox([...inbox, inbox.filter(index !== item)])
-      setInbox([...inbox.filter(item.id !== index)])
-      // setInbox([...inbox.splice(index, 1)])
-    }
+      setInbox([...inbox, inbox.filter(item => item !== item.id)])
+      // const filteredInbox = inbox.filter(item => item.id !== item);
+      // console.log("filteredInbox: ", filteredInbox);
+      // console.log("inbox: ", inbox.filter(item => item.id !== item));
+      // setInbox([filteredInbox]);
+      // setInbox([inbox.filter(item => item.id !== item)])
+      // setInbox([...inbox.splice(item, 1)])
+    // }
 
     // if email is from spam
     if (item.tag === "spam") {
