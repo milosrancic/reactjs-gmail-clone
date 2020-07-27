@@ -67,16 +67,16 @@ const App = () => {
     setTrash([item, ...trash ]);
 
     // if email is from inbox
-    if (item.tag === "inbox") {
+    // if (item.tag === "inbox") {
       // remove that email from inbox
       setInbox([...inbox.filter(inbox => inbox !== item)])
-    }
+    // }
 
     // if email is from spam
-    if (item.tag === "spam") {
+    // if (item.tag === "spam") {
       // remove that email from spam
       setSpam([...spam.filter(spam => spam !== item)])
-    }
+    // }
   }
   
   const addToInbox = item => {
