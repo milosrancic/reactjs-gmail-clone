@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import uuid from 'react-uuid';
 import './App.scss';
 
 import Layout from "../components/Layout";
@@ -8,7 +9,7 @@ const App = () => {
   const [inbox, setInbox] = useState([
     {
       tag: "inbox",
-      id: 1,
+      id: uuid(),
       sender: "Jane Doe",
       email: "Lorem ipsum dorom sit amet.",
       checked: false,
@@ -16,7 +17,7 @@ const App = () => {
     },
     {
       tag: "inbox",
-      id: 2,
+      id: uuid(),
       sender: "Josh One",
       email: "Lorem ipsum dolor sit amet, consectetur",
       checked: false,
@@ -24,7 +25,7 @@ const App = () => {
     },
     {
       tag: "inbox",
-      id: 3,
+      id: uuid(),
       sender: "Mike Mike",
       email: "random placeholder text",
       checked: false,
@@ -35,7 +36,7 @@ const App = () => {
   const [spam, setSpam] = useState([
     {
       tag: "spam",
-      id: 4,
+      id: uuid(),
       sender: "Lily Mike",
       email: "Lorem ipsum, dolor sit amet consectetur adipisicing.",
       checked: false,
@@ -43,7 +44,7 @@ const App = () => {
     },
     {
       tag: "spam",
-      id: 5,
+      id: uuid(),
       sender: "As Die",
       email: "some random text in email body",
       checked: false,
@@ -54,7 +55,7 @@ const App = () => {
   const [trash, setTrash] = useState([
     {
       tag: "trash",
-      id: 6,
+      id: uuid(),
       sender: "Mike Mikey",
       email: "this email is in trash",
       checked: false,
