@@ -94,25 +94,30 @@ const App = () => {
   }
 
   const addToStarred = (item) => {
-    // console.log("addToStarred", item)
+    console.log("addToStarred", item)
 
     // console.log("add to starred", item)
     // console.log(item);
   }
 
-  const addToSpam = item => {
-    console.log("addtoSPAM: ", item)
-  }
+  // const addToSpam = item => {
+  //   console.log("addtoSPAM: ", item)
+  // }
 
   
 
   const toggleChecked = item => {
     console.log("toggle checked", item)
-    setInbox([item => !item.checked])
+    // setInbox([item => !item.checked])
     // console.log(this.state.inbox[item])
     // console.log("original checked state",   
     // item.checked, !item.checked);
   }
+
+  const mark = () => {
+    console.log("mark all button");
+  }
+
     return (
       <div className="App">
         <Layout 
@@ -123,6 +128,7 @@ const App = () => {
           addToTrash={addToTrash}
           addToStarred={addToStarred}
           toggleChecked={toggleChecked}
+          mark={mark}
       />
       </div>
     )
