@@ -118,8 +118,8 @@ const App = () => {
     console.log("mark all button");
     let itemName = e.target.name;
     let checked = e.target.checked;
-    
 
+    
   }
 
     return (
