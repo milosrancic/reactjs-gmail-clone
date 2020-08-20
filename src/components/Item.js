@@ -21,13 +21,13 @@ const Item = props => {
           :  <button onClick={() => props.mark()}>mark all</button> 
         }
       </div>
-      
+      {/* onChange={() => props.toggleChecked(item)} checked={item.checked}  */}
       <ul>
         {props.state.map(item =>
         <li className="li"  key={item.id}>
             <input type="checkbox" 
-            onChange={() => props.toggleChecked(item)} 
-            checked={item.checked}  />
+            
+              />
             <i className=
               {item.starred ? `fas fa-star starred` : `fas fa-star`}
                 onClick={
