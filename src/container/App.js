@@ -12,7 +12,7 @@ const App = () => {
       id: uuid(),
       sender: "Jane Doe",
       email: "Lorem ipsum dorom sit amet.",
-      checked: false,
+      isChecked: false,
       starred: true
     },
     {
@@ -20,7 +20,7 @@ const App = () => {
       id: uuid(),
       sender: "Josh One",
       email: "Lorem ipsum dolor sit amet, consectetur",
-      checked: false,
+      isChecked: false,
       starred: false 
     },
     {
@@ -28,7 +28,7 @@ const App = () => {
       id: uuid(),
       sender: "Mike Mike",
       email: "random placeholder text",
-      checked: false,
+      isChecked: false,
       starred: true
     }
   ]);
@@ -39,7 +39,7 @@ const App = () => {
       id: uuid(),
       sender: "Lily Mike",
       email: "Lorem ipsum, dolor sit amet consectetur adipisicing.",
-      checked: false,
+      isChecked: false,
       starred: false
     },
     {
@@ -47,7 +47,7 @@ const App = () => {
       id: uuid(),
       sender: "As Die",
       email: "some random text in email body",
-      checked: false,
+      isChecked: false,
       starred: false
     }
   ]);
@@ -58,7 +58,7 @@ const App = () => {
       id: uuid(),
       sender: "Mike Mikey",
       email: "this email is in trash",
-      checked: false,
+      isChecked: false,
       starred: false
     }
   ]);
@@ -114,8 +114,12 @@ const App = () => {
     // item.checked, !item.checked);
   }
 
-  const mark = () => {
+  const mark = e => {
     console.log("mark all button");
+    let itemName = e.target.name;
+    let checked = e.target.checked;
+    
+
   }
 
     return (
