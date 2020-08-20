@@ -30,11 +30,11 @@ const Layout = (props) => {
           path="/inbox" 
           render={() => (
             <Inbox state={props.inbox} 
-            toggleChecked={props.toggleChecked}
-            addToTrash={props.addToTrash}
-            addToStarred={props.addToStarred}
-            toggleChecked={props.toggleChecked}
-            mark={props.mark}
+              toggleChecked={props.toggleChecked}
+              addToTrash={props.addToTrash}
+              addToStarred={props.addToStarred}
+              toggleChecked={props.toggleChecked}
+              mark={props.mark}
             /> )} 
         />
 

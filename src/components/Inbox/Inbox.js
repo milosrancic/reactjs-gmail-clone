@@ -11,6 +11,7 @@ const Inbox = (props) => {
         toggleChecked={props.toggleChecked}
         addToTrash={props.addToTrash}
         addToStarred={props.addToStarred}
+        mark={props.mark}
        />
   </>
   )
