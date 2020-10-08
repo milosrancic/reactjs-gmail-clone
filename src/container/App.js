@@ -63,6 +63,9 @@ const App = () => {
     }
   ]);
 
+  const [checked, setChecked] = useState(false);
+
+
   const addToTrash = item => {
     // console.log("add to trash", item);
     setTrash([item, ...trash ]);
@@ -112,14 +115,13 @@ const App = () => {
     // console.log(this.state.inbox[item])
     // console.log("original checked state",   
     // item.checked, !item.checked);
+    setChecked(!checked);
   }
 
   const mark = e => {
     console.log("mark all button");
-    let itemName = e.target.name;
-    let checked = e.target.checked;
-
-    
+    // let itemName = e.target.name;
+    // let checked = e.target.checked;
   }
 
     return (
