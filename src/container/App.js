@@ -115,7 +115,7 @@ const App = () => {
     // console.log(this.state.inbox[item])
     // console.log("original checked state",   
     // item.checked, !item.checked);
-    setChecked(!checked);
+    setChecked(checked => !checked);
   }
 
   const mark = e => {
