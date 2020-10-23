@@ -25,15 +25,17 @@ const Item = props => {
       <ul>
         {props.state.map(item =>
         <li className="li"  key={item.id}>
-            <input type="checkbox" 
-            
-              />
+            <input type="checkbox" />
+
+          {/* if it's trash return nothing, if it's not trash return star */}
+          {props.title === "trash" ? undefined : 
             <i className=
               {item.starred ? `fas fa-star starred` : `fas fa-star`}
                 onClick={
                   props.addToStarred ? () => props.addToStarred(item) : undefined
                 }>
             </i>
+          }
 
             <span className="sender"
               onClick={
