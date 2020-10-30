@@ -34,7 +34,7 @@ const Layout = (props) => {
               addToTrash={props.addToTrash}
               addToStarred={props.addToStarred}
               toggleChecked={props.toggleChecked}
-              mark={props.mark}
+              markAll={props.markAll}
             /> )} 
         />
 
@@ -46,7 +46,7 @@ const Layout = (props) => {
             toggleChecked={props.toggleChecked}
             addToTrash={props.addToTrash}
             addToStarred={props.addToStarred}
-            mark={props.mark}
+            markAll={props.markAll}
             /> )} 
         />
 
@@ -56,7 +56,7 @@ const Layout = (props) => {
           render ={() => (
           <Trash state={props.trash}
           toggleChecked={props.toggleChecked}
-          mark={props.mark}
+          markAll={props.markAll}
           />
         )} />
       </Switch>

@@ -118,7 +118,7 @@ const App = () => {
     setChecked(checked => !checked);
   }
 
-  const mark = e => {
+  const markAll = e => {
     console.log("mark all button");
     // let itemName = e.target.name;
     // let checked = e.target.checked;
@@ -134,7 +134,7 @@ const App = () => {
           addToTrash={addToTrash}
           addToStarred={addToStarred}
           toggleChecked={toggleChecked}
-          mark={mark}
+          markAll={markAll}
       />
       </div>
     )

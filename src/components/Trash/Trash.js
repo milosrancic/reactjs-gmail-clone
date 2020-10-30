@@ -9,7 +9,7 @@ const Trash = props => {
         title="trash"
         state={props.state}
         toggleChecked={props.toggleChecked}
-        mark={props.mark}
+        markAll={props.markAll}
        />
     </>
   )

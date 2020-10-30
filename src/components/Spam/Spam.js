@@ -11,7 +11,7 @@ const Spam = (props) => {
         toggleChecked={props.toggleChecked}
         addToTrash={props.addToTrash}
         addToStarred={props.addToStarred}
-        mark={props.mark}
+        markAll={props.markAll}
        />
   </>
   )

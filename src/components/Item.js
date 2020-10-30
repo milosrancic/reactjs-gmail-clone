@@ -18,7 +18,7 @@ const Item = props => {
        {
           props.state.length < 1 
           ?  <p style={{textAlign: "center", marginTop: "4em", fontSize:"18px"}}>There are no messages left in <span style={{fontWeight:"bold"}}> {props.title} </span></p>
-          :  <button onClick={() => props.mark()}>mark all</button> 
+          :  <button onClick={() => props.markAll()}>mark all</button> 
         }
       </div>
       {/* onChange={() => props.toggleChecked(item)} checked={item.checked}  */}
