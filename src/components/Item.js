@@ -1,6 +1,10 @@
 import React from "react";
 import "./Item.scss";
 
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+
 const Item = (props) => {
   return (
     <div className="Item">
@@ -26,42 +30,60 @@ const Item = (props) => {
         )}
       </div>
       {/* onChange={() => props.toggleChecked(item)} checked={item.checked}  */}
-      <ul>
-        {props.state.map((item) => (
-          <li className="li" key={item.id}>
-            <input type="checkbox" />
+      <Container className="">
+        <ul>
+          {props.state.map((item) => (
+            <li className="li" key={item.id}>
+              <Row className="">
+                <Col xs={2} className="">
+                  <input type="checkbox" />
 
-            {/* if it's trash return nothing, if it's not trash return star */}
-            {props.title === "trash" ? undefined : (
-              <i
-                className={item.starred ? `fas fa-star starred` : `fas fa-star`}
-                onClick={
-                  props.addToStarred
-                    ? () => props.addToStarred(item)
-                    : undefined
-                }
-              ></i>
-            )}
+                  {/* if it's trash return nothing, if it's not trash return star */}
+                  {props.title === "trash" ? undefined : (
+                    <i
+                      className={
+                        item.starred ? `fas fa-star starred` : `fas fa-star`
+                      }
+                      onClick={
+                        props.addToStarred
+                          ? () => props.addToStarred(item)
+                          : undefined
+                      }
+                    ></i>
+                  )}
+                </Col>
 
-            <span
-              className="sender"
-              onClick={
-                props.addToInbox ? () => props.addToInbox(item) : () => false
-              }
-            >
-              {item.sender}
-            </span>
+                <Col xs={2}>
+                  <span
+                    className="sender"
+                    onClick={
+                      props.addToInbox
+                        ? () => props.addToInbox(item)
+                        : () => false
+                    }
+                  >
+                    {item.sender}
+                  </span>
+                </Col>
 
-            <span className="email">{item.email}</span>
-            <i
-              className="fas fa-trash"
-              onClick={
-                props.addToTrash ? () => props.addToTrash(item) : () => false
-              }
-            ></i>
-          </li>
-        ))}
-      </ul>
+                <Col xs={7}>
+                  <span className="email text-center">{item.email}</span>
+                </Col>
+                <Col xs={1}>
+                  <i
+                    className="fas fa-trash float-right"
+                    onClick={
+                      props.addToTrash
+                        ? () => props.addToTrash(item)
+                        : () => false
+                    }
+                  ></i>
+                </Col>
+              </Row>
+            </li>
+          ))}
+        </ul>
+      </Container>
     </div>
   );
 };
