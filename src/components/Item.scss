@@ -16,14 +16,14 @@
       border-left: 3px solid transparent;
 
       // this delete
-      position: relative;
+      // position: relative;
 
       &:hover {
         border-left: 3px solid black;
       }
     }
 
-    input[type="checkbox"]:checked  {
+    input[type="checkbox"]:checked {
       // background-color: lightpink;
       // box-shadow: 0 0 0 5px hotpink;
       // color: lime;
@@ -37,13 +37,13 @@
       // -moz-appearance: none;
       // appearance: none;
     }
-    
+
     .checked {
       background-color: black;
-      color: blue ; 
+      color: blue;
       // margin: 20px;
       padding: 30px;
-  }
+    }
 
     .fa-star {
       margin-left: 5px;
@@ -51,7 +51,6 @@
       color: white;
       -webkit-text-stroke-width: 1px;
       -webkit-text-stroke-color: black;
-      
     }
     .starred {
       color: gold;
@@ -59,7 +58,6 @@
       -webkit-text-stroke-color: black;
     }
     .sender {
-
     }
 
     .fa-trash {
@@ -67,7 +65,9 @@
     }
 
     .email {
-      padding-left: 30px;
+      // padding-left: 30px;
+      padding-left: 1em;
+      position: absolute;
     }
   }
 }
