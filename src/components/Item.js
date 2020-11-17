@@ -1,9 +1,7 @@
 import React from "react";
 import "./Item.scss";
 
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
+import { Container, Row, Col } from "react-bootstrap";
 
 const Item = (props) => {
   return (
@@ -33,6 +31,13 @@ const Item = (props) => {
                   <input type="checkbox" />
 
                   {/* if it's "trash" return nothing, if it's not trash return star */}
+
+                  {/* OVO ISPOD IDE pre onClick ispod: */}
+                  {/* 
+                  <i
+                      className={
+                        item.starred ? `fas fa-star starred` : `fas fa-star`
+                      } */}
                   {props.title === "trash" ? undefined : (
                     <i
                       className={
