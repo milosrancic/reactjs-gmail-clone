@@ -10,12 +10,6 @@ const Item = (props) => {
     <div className="Item">
       <p className="title">{props.title}</p>
 
-      {/* {
-        props.state.length > 0 
-        ?  <button>mark all</button>
-        :   `There are no messages left in ${props.title}` 
-      } */}
-
       {/* move this styling into coresponding css file (item.scss), don't leave it like this! */}
       <div style={{ marginTop: "3em" }}>
         {props.state.length < 1 ? (
