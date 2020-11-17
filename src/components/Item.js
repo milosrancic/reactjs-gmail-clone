@@ -38,7 +38,7 @@ const Item = (props) => {
                 <Col xs={2} className="">
                   <input type="checkbox" />
 
-                  {/* if it's trash return nothing, if it's not trash return star */}
+                  {/* if it's "trash" return nothing, if it's not trash return star */}
                   {props.title === "trash" ? undefined : (
                     <i
                       className={
