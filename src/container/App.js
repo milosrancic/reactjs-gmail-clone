@@ -93,11 +93,9 @@ const App = () => {
   };
 
   // OVA DVA NEMAJU VEZE IKAKVE UOPSTE
-  const [starred, toggleStarred] = useState(false);
+  const [starred, setStarred] = useState(false);
   const addToStarred = (item) => {
     console.log("addToStarred", item.starred);
-    toggleStarred((starred) => !starred);
-    console.log("after addToStarred", item.starred);
   };
 
   // const addToSpam = item => {
