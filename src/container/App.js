@@ -62,8 +62,6 @@ const App = () => {
     },
   ]);
 
-  const [checked, setChecked] = useState(false);
-
   const addToTrash = (item) => {
     // console.log("add to trash", item);
     setTrash([item, ...trash]);
@@ -94,16 +92,19 @@ const App = () => {
     // })
   };
 
+  // OVA DVA NEMAJU VEZE IKAKVE UOPSTE
+  const [starred, toggleStarred] = useState(false);
   const addToStarred = (item) => {
-    console.log("addToStarred", item);
-
-    // console.log("add to starred", item)
-    // console.log(item);
+    console.log("addToStarred", item.starred);
+    toggleStarred((starred) => !starred);
+    console.log("after addToStarred", item.starred);
   };
 
   // const addToSpam = item => {
   //   console.log("addtoSPAM: ", item)
   // }
+
+  const [checked, setChecked] = useState(false);
 
   const toggleChecked = (item) => {
     console.log("toggle checked", item);
@@ -121,6 +122,10 @@ const App = () => {
     let itemName = e.target.email;
     let checked = e.target.isChecked;
   };
+
+  // const toggleStar = e => {
+  //   console.log('toggle star')
+  // }
 
   return (
     <div className="App">
