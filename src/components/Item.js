@@ -69,16 +69,20 @@ const Item = (props) => {
                 <Col xs={7}>
                   <span className="email text-center">{item.email}</span>
                 </Col>
-                <Col xs={1}>
-                  <i
-                    className="fas fa-trash float-right"
-                    onClick={
-                      props.addToTrash
-                        ? () => props.addToTrash(item)
-                        : () => false
-                    }
-                  ></i>
-                </Col>
+
+                {/* if it's "trash" folder, don't show trash can */}
+                {props.title === "trash" ? undefined : (
+                  <Col xs={1}>
+                    <i
+                      className="fas fa-trash float-right"
+                      onClick={
+                        props.addToTrash
+                          ? () => props.addToTrash(item)
+                          : () => false
+                      }
+                    ></i>
+                  </Col>
+                )}
               </Row>
             </li>
           ))}
